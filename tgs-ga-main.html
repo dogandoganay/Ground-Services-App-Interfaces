@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<!--
+[[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+[::::::::::::::      ::::::::::::::]
+[::::::::::::::      ::::::::::::::]
+[::::::[[[[[[[:      :]]]]]]]::::::]
+[:::::[                      ]:::::]
+[:::::[                      ]:::::]
+[:::::[     Dogan Doganay    ]:::::]
+[:::::[       Apr 2017       ]:::::]
+[:::::[                      ]:::::]
+[:::::[                      ]:::::]
+[::::::[[[[[[[:      :]]]]]]]::::::]
+[::::::::::::::      ::::::::::::::]
+[::::::::::::::      ::::::::::::::]
+[[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGS | GHM</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+  <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+  <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+  <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+  <!-- Sweet Alert -->
+  <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+</head>
+
+<body class="md-skin">
+  <div id="wrapper">
+    <div class="loadingAircraft">
+      <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
+    </div>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <span>
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg" style="border-radius:15%" />
+                            </span>
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Dogan Doganay</strong>
+                                    </span> <span class="text-muted text-xs block">DD025569 <b class="caret"></b></span>
+                                </span>
+                            </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a href=".html">Profil Bilgileri</a></li>
+                <li><a href=".html">Iletisim Bilgileri</a></li>
+                <li><a href=".html">Mail Kutusu</a></li>
+                <li class="divider"></li>
+                <li><a href="tgs-login.html">Oturumu Kapat</a></li>
+              </ul>
+            </div>
+            <div class="logo-element">
+              TGS
+            </div>
+          </li>
+          <li>
+            <a href="tgs-main.html"><i class="fa fa-th-large"></i> <span class="nav-label">DASHBOARD</span> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-paper-plane"></i> <span class="nav-label">UCUSLAR</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-incoming-flights.html">Gelen Ucuslar</a></li>
+              <li><a href="tgs-outgoing-flights.html">Giden Ucuslar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-suitcase"></i> <span class="nav-label">KARGO</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-flight-reporting.html">Ucus Raporlama</a></li>
+              <li><a href="tgs-offload-reporting.html">Offload Raporlama</a></li>
+              <li><a href="tgs-stuff-reporting.html">Personel Raporlama</a></li>
+              <li><a href="tgs-award-penalty.html">Odul ve Ceza</a></li>
+              <li><a href="tgs-uld-reporting.html">ULD Raporlama</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-book"></i> <span class="nav-label">VPK </span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-vpk.html">VPK Raporlama</a></li>
+              <li><a href="tgs-illegal-document.html">Sahte Dokuman Ekle</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="widgets.html"><i class="fa fa-exclamation-triangle"></i> <span class="nav-label">INAD</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-search-inad.html">Inad Yolcu Ara</a></li>
+              <li><a href="tgs-add-inad.html">Inad Yolcu Ekle</a></li>
+            </ul>
+          </li>
+          <!-- <li class="active">
+                        <a href="tgs-ga-main.html"><i class="fa fa-paste"></i> <span class="nav-label">GHM</span>  </a>
+                    </li> -->
+          <li class="active">
+            <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
+              <li><a href="tgs-ga-reporting.html">Reporting</a></li>
+            </ul>
+          </li>
+          <!-- <li>
+                        <a href="widgets.html"><i class="fa fa-wheelchair"></i> <span class="nav-label">GH WCH</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="tgs-ga-wch.html">WCH Yolcu Ekle</a></li>
+                            <li><a href="tgs-ga-wch-reporting.html">WCH Raporlama</a></li>
+                        </ul>
+                    </li> -->
+          <!-- <li>
+                        <a href="widgets.html"><i class="fa fa-user-times"></i> <span class="nav-label">GH INAD</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="tgs-ga-inad.html">Inad Yolcu Ekle</a></li>
+                        </ul>
+                    </li> -->
+          <li>
+            <a href="#"><i class="fa fa-user"></i> <span class="nav-label">LCV - OFFLOAD</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-offload-passenger-add.html">Offload Yolcu Ekleme</a></li>
+              <li><a href="tgs-lcv-add-passenger.html">LCV Yolcu Ekleme</a></li>
+              <li><a href="tgs-lcv-offload-report.html">Raporlama</a></li>
+              <li><a href="tgs-lcv-offload-comparision.html">(Lcv-Offload) Karsilastirma</a></li>
+              <li><a href="tgs-lcv-offload-staff-performance.html">Personel Performans</a></li>
+              <li><a href="tgs-lcv-offload-add-staff.html">Personel Ekle</a></li>
+              <li><a href="tgs-lcv-offload-edit-staff.html">Personel Duzenle</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">CIHAZ TAKIP</span>  <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-device-management.html"> Cihaz Islemleri</a></li>
+              <li><a href="tgs-all-devices.html">Tum Cihazlar</a></li>
+              <li><a href="tgs-device-add.html">Cihaz Ekle</a></li>
+              <li><a href="tgs-device-history.html">Cihaz Gecmis Kaydi</a></li>
+              <li><a href="tgs-send-to-service.html">Servise Gonderme Formu</a></li>
+              <li><a href="tgs-get-back-from-service.html">Servisten Teslim Alma Formu</a></li>
+              <li><a href="tgs-service-history.html">Servis Gecmis Kaydi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-envelope-square"></i> <span class="nav-label">CO-MAIL</span>  <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-co-mail-dashboard.html">Co-Mail Dashboard</a></li>
+              <li><a href="tgs-incoming-mail.html">Gelen Gonderi</a></li>
+              <li><a href="tgs-outgoing-mail.html">Giden Gonderi</a></li>
+              <li><a href="tgs-outgoing-mail.html">Ulke Giris Fisleri</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">ORTM </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-crash-record-form.html">Kaza Tespit Formu</a></li>
+              <li><a href="tgs-ortm-stuff-monitoring.html">Personel Takip</a></li>
+              <li><a href="tgs-safa-ramp-checklist.html">SAFA/Ramp Emniyet Checklisti</a></li>
+              <li><a href="tgs-industrial-accident.html">Is Kazasi</a></li>
+              <li><a href="tgs-last-second-call.html">Ramak Kala</a></li>
+              <li><a href="tgs-rule-violation.html">Kural Ihlal</a></li>
+              <li>
+                <a href="tgs-ortm-reports.html">Raporlamalar</a>
+                <ul class="nav nav-second-level">
+                  <li><a href="ortm-recorded-reports.html">Kayitli Raporlar</a></li>
+                  <li><a href="ortm-new-report.html">Yeni Rapor Olustur</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">PROJE & RAPORLAMA</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-performance-values.html">Performans Degerleri</a></li>
+              <li><a href="tgs-number-of-passengers.html">Yolcu Sayilari</a></li>
+              <li><a href="tgs-number-of-flights.html">Sefer Sayilari</a></li>
+              <li><a href="tgs-delay-analysis.html">Tehir Analizi</a></li>
+              <li><a href="tgs-operation-values.html">Operasyon Verileri</a></li>
+              <li><a href="tgs-luggage-values.html">Bagaj Verileri</a></li>
+              <li><a href="tgs-flight-irregularities.html">Ucus Aksakliklari</a></li>
+              <li><a href="tgs-performance-affecting-factors.html">Performansi Etkileyen Faktorler</a></li>
+              <li><a href="tgs-stuff-values.html">Personel Verileri</a></li>
+              <li><a href="tgs-tool-values.html">Techizat Verileri</a></li>
+              <li><a href="tgs-crash-values.html">Kaza Verileri</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">YHM</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-denied-boarding.html">Denied Boarding</a></li>
+              <li><a href="tgs-visa-passport.html">Vize &amp; Pasaport</a></li>
+              <li><a href="tgs-arrival.html">Arrival</a></li>
+              <li><a href="tgs-pass-services-forms.html">YHM Kayit Formlari</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-code"></i> <span class="nav-label">Diğer</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-staff-performance.html">Personel Performans</a></li>
+              <li><a href="tgs-runway-alteration.html">Pist Değişiklikleri</a></li>
+              <li><a href="tgs-charts.html">Charts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+      <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+              <div class="form-group">
+                <input type="text" placeholder="Ara..." class="form-control" name="top-search" id="top-search">
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-top-links navbar-right">
+            <li>
+              <span class="m-r-sm text-muted welcome-message">TGS Web Uygulamalari Ekrani</span>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                            </a>
+              <ul class="dropdown-menu dropdown-messages">
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                        </a>
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">1 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                        </a>
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">2 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                        </a>
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">3 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                        </a>
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">4 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="#l">
+                                            <i class="fa fa-envelope"></i> <strong>Tumunu Oku</strong>
+                                        </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                            </a>
+              <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-envelope fa-fw"></i> 16 Okunmamis Iletiniz Var
+                      <span class="pull-right text-muted small">4 dakika once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-twitter fa-fw"></i> 3 Yeni Takipci
+                      <span class="pull-right text-muted small">12 dakika once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-upload fa-fw"></i> Server Onarim Calismasi
+                      <span class="pull-right text-muted small">54 Dakika Once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="#l">
+                                            <strong>Tumunu Goruntule</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="tgs-login.html">
+                                <i class="fa fa-sign-out"></i> Oturumu Kapat
+                            </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+          <h2>GHM Main</h2>
+          <ol class="breadcrumb">
+            <li>
+              <a href="index.html">Home Page</a>
+            </li>
+
+            <li class="active">
+              <strong>GHM Main</strong>
+            </li>
+          </ol>
+        </div>
+        <div class="col-lg-2">
+          <button class="btn btn-default btn-block dim" style="margin-top:30px; text-transform:none;" data-toggle="modal" data-target="#createFlightModal"> <i class="fa fa-plus"></i> Create a Flight </button>
+        </div>
+      </div>
+
+      <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox-content m-b-sm border-bottom">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="pull-left m-r-md">
+                <i class="fa fa-calendar-o text-default mid-icon"></i>
+              </div>
+              <h2>Date range preference</h2>
+              <span>Choose a date range to view all flights between the selected dates. Otherwise only last 7 days' flights will be shown.</span>
+            </div>
+            <div class="col-lg-3 text-right">
+              <input class="form-control" type="text" style="width:250px; margin-top:25px;display:inline-block " name="daterange" id="daterange" placeholder="Choose date range" />
+              <button class="btn btn-primary" id="queryDateRange" style="margin-top:-5px">
+                        		<i class="fa fa-search" style="font-size:1.3em;"></i>
+                        	</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+            <h4>Airline</h4>
+          </div>
+          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+            <h4>Flight No</h4>
+          </div>
+          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+            <h4>Date</h4>
+          </div>
+          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+            <h4>Flight Info</h4>
+          </div>
+          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+            <h4>Briefing</h4>
+          </div>
+          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+            <h4>Arrival</h4>
+          </div>
+          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+            <h4>Departure</h4>
+          </div>
+
+          <div class="col-md-1 text-center">
+
+          </div>
+        </div>
+        <div class="vote-item">
+          <div class="row">
+            <div class="col-md-1">
+              <h5>Singapore Airlines</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>SQ 392</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>01.01.2017</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#" data-toggle="modal" data-target="#editFlightModal">
+                <div class="progress progress-striped active">
+                  <div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%100</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-briefing.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar progress-bar-success-warning">
+                    <span>%0</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-arrival.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar progress-bar-success-danger">
+                    <span>%0</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-departure.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar progress-bar-success-danger">
+                    <span>%0</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
+              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="vote-item">
+          <div class="row">
+            <div class="col-md-1">
+              <h5>Air Canada</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>AC 798</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>01.01.2017</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#" data-toggle="modal" data-target="#editFlightModal">
+                <div class="progress progress-striped active">
+                  <div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%100</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-briefing.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 55%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" role="progressbar" class="progress-bar progress-bar-warning">
+                    <span>%55</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-arrival.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 36%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="36" role="progressbar" class="progress-bar progress-bar-success-danger">
+                    <span>%36</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-departure.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar progress-bar-success-danger">
+                    <span>%0</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
+              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vote-item">
+          <div class="row">
+            <div class="col-md-1">
+              <h5>Qeshm Air</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>QB 2214</h5>
+            </div>
+            <div class="col-md-1">
+              <h5>01.01.2017</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#" data-toggle="modal" data-target="#editFlightModal">
+                <div class="progress progress-striped active">
+                  <div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%100</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-briefing.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 92%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%92</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-arrival.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 90%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%90</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="tgs-ga-departure.html">
+                <div class="progress progress-striped active">
+                  <div style="width: 85%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" role="progressbar" class="progress-bar progress-bar-success">
+                    <span>%85</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
+              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="modal inmodal fade" id="createFlightModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+              <h2 class="modal-title">
+                                Create a New Flight <i class="fa fa-plane text-muted"></i>
+                            </h2>
+            </div>
+
+            <div class="modal-body" style="">
+
+
+              <div class="row">
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight Type</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">Select</option>
+                                                    <option>SCHEDULED</option>
+                                                    <option>CHARTER</option>
+                                                    <option>VIP</option>
+                                                    <option>BUSINESS</option>
+                                                    <option>UMRAH</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>DCS Preference</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">Select</option>
+                                                    <option>TROYA</option>
+                                                    <option>AMADEUS</option>
+                                                    <option>GALILEO</option>
+                                                    <option>IATI</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Airline Name</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">Select</option>
+                                                    <option>AIR CANADA</option>
+                                                    <option>MALASIAN AIRLINES</option>
+                                                    <option>QESHM AIR</option>
+                                                    <option>SINGAPORE AIRLINES</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight No Arr</label>
+                    <input type="number" min="0" placeholder="Arr" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight No Dep</label>
+                    <input type="number" min="0" placeholder="Dep" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Aircraft Type</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">Select</option>
+                                                    <option value="">BOEING</option>
+                                                    <option value="">AIRBUS</option>
+                                                    <option value="">EMBRAER</option>
+                                                    <option value="">...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Aircraft Model</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">Select</option>
+                                                    <option value="">737-700</option>
+                                                    <option value="">737-800</option>
+                                                    <option value="">737-900ER</option>
+                                                    <option value="">777-300ER</option>
+                                                    <option value="">...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Registration</label>
+                    <input type="text" placeholder="Registration" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Cocpit</label>
+                    <input type="number" min="0" placeholder="Cocpit" class="form-control" id="inputCocpit">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Cabin</label>
+                    <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Total</label>
+                    <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true">
+                  </div>
+                </div>
+
+                <div class="col-lg-2">
+                  <label>STA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="00:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>ETA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="00:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>STD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="00:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <div class="col-lg-2 ">
+                <button class="btn btn-primary btn-block save" id="saveFlight"> <i class="fa fa-save"></i> &nbsp; Save </button>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal inmodal fade" id="editFlightModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+              <h2 class="modal-title">
+                                Edit Flight Details<i class="fa fa-plane text-muted"></i>
+                            </h2>
+            </div>
+
+            <div class="modal-body" style="">
+
+
+              <div class="row">
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight Type</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option>SCHEDULED</option>
+                                                    <option>CHARTER</option>
+                                                    <option>VIP</option>
+                                                    <option>BUSINESS</option>
+                                                    <option>UMRAH</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>DCS Preference</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option>AMADEUS</option>
+                                                    <option>TROYA</option>
+                                                    <option>GALILEO</option>
+                                                    <option>IATI</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Airline Name</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option>AIR CANADA</option>
+                                                    <option>MALASIAN AIRLINES</option>
+                                                    <option>QESHM AIR</option>
+                                                    <option>SINGAPORE AIRLINES</option>
+                                                    <option>...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight No Arr</label>
+                    <input type="number" min="0" placeholder="Arr" class="form-control" value="798">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Flight No Dep</label>
+                    <input type="number" min="0" placeholder="Dep" class="form-control" value="799">
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Aircraft Type</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                    <option value="">BOEING</option>
+                                                    <option value="">AIRBUS</option>
+                                                    <option value="">EMBRAER</option>
+                                                    <option value="">...</option>
+                                                </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Aircraft Model</label>
+                    <div class="input-group" style="width:100%">
+                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                <option value="">777-300ER</option>
+                                                <option value="">737-700</option>
+                                                <option value="">737-800</option>
+                                                <option value="">737-900ER</option>
+                                                <option value="">...</option>
+                                            </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group myRequiredField">
+                    <label>Registration</label>
+                    <input type="text" placeholder="Registration" class="form-control" value="XXYYY">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Cocpit</label>
+                    <input type="number" min="0" placeholder="Cocpit" class="form-control" id="inputCocpit" value="2">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Cabin</label>
+                    <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin" value="5">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group myRequiredField">
+                    <label>Total</label>
+                    <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true" value="7">
+                  </div>
+                </div>
+
+                <div class="col-lg-2">
+                  <label>STA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="14:50">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>ETA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="14:36">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>STD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="18:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <div class="col-lg-2 ">
+                <button class="btn btn-primary btn-block save" id="updateFlight"> <i class="fa fa-save"></i> &nbsp; Update </button>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="pull-right">
+          Ground Services Main &copy; <span class="currentYearSpan"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="js/plugins/jeditable/jquery.jeditable.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+  <script src="js/plugins/pace/pace.min.js"></script>
+  <!-- Data picker -->
+  <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+  <!-- Chosen -->
+  <script src="js/plugins/chosen/chosen.jquery.js"></script>
+  <!-- iCheck -->
+  <script src="js/plugins/iCheck/icheck.min.js"></script>
+  <!-- Sweet alert -->
+  <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+  <!-- Clock picker -->
+  <script src="js/plugins/clockpicker/clockpicker.js"></script>
+  <!-- Date range picker -->
+  <!-- Date range use moment.js same as full calendar plugin -->
+  <script src="js/plugins/fullcalendar/moment.min.js"></script>
+  <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Page-Level Scripts -->
+  <script>
+    printCurrentDate();
+    removeLoader();
+
+
+    $('input[name="daterange"]').daterangepicker({
+      showDropdowns: true,
+      showWeekNumbers: true,
+      showISOWeekNumbers: true,
+      locale: {
+        format: "DD/MM/YYYY",
+        separator: " - ",
+        firstDay: 1
+      },
+      linkedCalendars: false,
+      opens: "left",
+      applyClass: "btn-primary",
+      ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+        'This Year': [moment().startOf('year'), moment().endOf('year')],
+        'Last Year': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')],
+      }
+    });
+
+    $('.i-checks').iCheck({
+      checkboxClass: 'icheckbox_square-green',
+      radioClass: 'iradio_square-green',
+    });
+
+    var config = {
+      '.chosen-select': {},
+      '.chosen-select-deselect': {
+        allow_single_deselect: true
+      },
+      '.chosen-select-no-single': {
+        disable_search_threshold: 10
+      },
+      '.chosen-select-no-results': {
+        no_results_text: 'Oops, nothing found!'
+      },
+      '.chosen-select-width': {
+        width: "95%"
+      }
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+  </script>
+  <script>
+    $('button#saveFlight').on('click', function(virtzirt) {
+      swal({
+        title: "Flight Created",
+        text: "Flight has been created and added to dashboard.",
+        type: "success",
+        timer: 3000,
+        // imageUrl: "images/thumbs-up.jpg",
+        // text: "A custom <span style='color:#F8BB86'>html<span> message.",
+        html: true,
+        showConfirmButton: false
+      }, function() {
+        location.reload();
+      });
+      virtzirt.preventDefault();
+    })
+
+    $('button#updateFlight').on('click', function(virtzirt) {
+      swal({
+        title: "Flight Updated",
+        type: "success",
+        timer: 1200,
+        // imageUrl: "images/thumbs-up.jpg",
+        // text: "A custom <span style='color:#F8BB86'>html<span> message.",
+        html: true,
+        showConfirmButton: false
+      }, function() {
+        location.reload();
+      });
+      virtzirt.preventDefault();
+    })
+
+
+
+    var queryButton = $('button#queryDateRange');
+    var dateInput = $('input#daterange');
+    queryButton.on('click', function(virtzirt) {
+      if (dateInput.val() == "") {
+        swal({
+          title: "Date range should be selected",
+          // text: "2 sn icinde kapanacak",
+          type: "warning",
+          timer: 2000,
+          showConfirmButton: false
+        });
+      } else {
+        swal({
+          title: "Date range will be queried!",
+          // text: "2 sn icinde kapanacak",
+          type: "success",
+          timer: 2000,
+          showConfirmButton: false
+        });
+      }
+      virtzirt.preventDefault();
+    })
+
+
+
+
+
+    var cocpit = $('#inputCocpit');
+    var cabin = $('#inputCabin');
+    var total = $('#inputTotalCrew');
+    cocpit.on('change', function() {
+      total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
+    });
+    cabin.on('change', function() {
+      total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
+    });
+
+
+    $('.clockpicker').clockpicker({
+      template: 'modal'
+    });
+    $('#createFlightModal').on('shown.bs.modal', function() {
+      $('.chosen-select', this).chosen('destroy').chosen();
+
+    });
+    $('#editFlightModal').on('shown.bs.modal', function() {
+      $('.chosen-select', this).chosen('destroy').chosen();
+
+    });
+  </script>
+  <style>
+    body.DTTT_Print {
+      background: #fff;
+    }
+
+    .DTTT_Print #page-wrapper {
+      margin: 0;
+      background: #fff;
+    }
+
+    button.DTTT_button,
+    div.DTTT_button,
+    a.DTTT_button {
+      border: 1px solid #e7eaec;
+      background: #fff;
+      color: #676a6c;
+      box-shadow: none;
+      padding: 6px 8px;
+    }
+
+    button.DTTT_button:hover,
+    div.DTTT_button:hover,
+    a.DTTT_button:hover {
+      border: 1px solid #d2d2d2;
+      background: #fff;
+      color: #676a6c;
+      box-shadow: none;
+      padding: 6px 8px;
+    }
+
+    .dataTables_filter label {
+      margin-right: 5px;
+    }
+  </style>
+
+  <style media="screen">
+    div.datepicker,
+    div.clockpicker-popover {
+      z-index: 2060 !important;
+    }
+
+    .progress {
+      box-shadow: 0px 0px 9px -2px;
+      height: 20px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      line-height: 20px;
+      font-size: 15px;
+    }
+
+    .vote-item {
+      padding-bottom: 5px;
+    }
+  </style>
+</body>
+
+</html>

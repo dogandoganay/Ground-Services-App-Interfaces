@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<!--
+[[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+[::::::::::::::      ::::::::::::::]
+[::::::::::::::      ::::::::::::::]
+[::::::[[[[[[[:      :]]]]]]]::::::]
+[:::::[                      ]:::::]
+[:::::[                      ]:::::]
+[:::::[     Dogan Doganay    ]:::::]
+[:::::[       Jun 2017       ]:::::]
+[:::::[                      ]:::::]
+[:::::[                      ]:::::]
+[::::::[[[[[[[:      :]]]]]]]::::::]
+[::::::::::::::      ::::::::::::::]
+[::::::::::::::      ::::::::::::::]
+[[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ground Services | Certificates</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Sweet Alert -->
+  <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+  <!-- Chosen -->
+  <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <!-- Date Picker-->
+  <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+  <!-- Date Range Picker-->
+  <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="md-skin">
+  <div id="wrapper">
+    <div class="loadingAircraft">
+      <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
+    </div>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Dogan Doganay</strong>
+                             </span> <span class="text-muted text-xs block">Project Manager <b class="caret"></b></span> </span> </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="http://webmail.Ground Services.com">Mailbox</a></li>
+                <li class="divider"></li>
+                <li><a href="Ground Services-login.html">Logout</a></li>
+              </ul>
+            </div>
+            <div class="logo-element">
+              Ground Services
+            </div>
+          </li>
+          <li>
+            <a href="index.html">
+                      <i class="fa fa-home"></i>
+                      <span class="nav-label">Dashboard</span>
+                  </a>
+          </li>
+          <li class="active">
+            <a href="index.html">
+                  <i class="fa fa-users"></i>
+                  <span class="nav-label">Employee Assesment</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-employees.html">Employees</a></li>
+              <li><a href="Ground Services-auditors.html">Auditors</a></li>
+              <li><a href="Ground Services-education.html">Education</a></li>
+              <li><a href="Ground Services-trainings.html">Trainings</a></li>
+              <li class="active"><a href="Ground Services-certificates.html">Certificates</a></li>
+              <li><a href="Ground Services-language.html">Language</a></li>
+              <li><a href="Ground Services-interview.html">Interview</a></li>
+              <li><a href="Ground Services-assesment.html">Assesment</a></li>
+              <li><a href="Ground Services-passport-visa.html">Passport &amp; Visa</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-building"></i>
+                  <span class="nav-label">Organisations</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-organisations.html">Organisations</a></li>
+              <li><a href="Ground Services-departments.html">Departments</a></li>
+              <li><a href="Ground Services-locations.html">Locations</a></li>
+              <li><a href="Ground Services-agreement.html">Agreement</a></li>
+              <li><a href="Ground Services-contacts.html">Contacts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Ground Services-products.html">
+                      <i class="fa fa-plane"></i>
+                      <span class="nav-label">Products</span>
+                  </a>
+          </li>
+          <li>
+            <a href="Ground Services-documents.html">
+                      <i class="fa fa-file-text"></i>
+                      <span class="nav-label">Documents</span>
+                  </a>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-list-ol"></i>
+                  <span class="nav-label">Checklists</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-questions.html">Questions</a></li>
+              <li><a href="Ground Services-scopes.html">Scopes</a></li>
+              <li><a href="Ground Services-areas.html">Areas</a></li>
+              <li><a href="Ground Services-create.html">Create</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-check-square"></i>
+                  <span class="nav-label">Audit Management</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-plans.html">Plans</a></li>
+              <li><a href="Ground Services-masters.html">Masters</a></li>
+              <li><a href="Ground Services-audits.html">Audits</a></li>
+              <li><a href="Ground Services-assignment.html">Assignment</a></li>
+              <li><a href="Ground Services-agenda.html">Agenda</a></li>
+              <li><a href="Ground Services-checklist.html">Checklist</a></li>
+              <li><a href="Ground Services-opening-meeting.html">Opening Meeting</a></li>
+              <li><a href="Ground Services-closure-meeting.html">Closure Meeting</a></li>
+              <li><a href="Ground Services-findings.html">Findings</a></li>
+              <li><a href="Ground Services-report.html">Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-search"></i>
+                  <span class="nav-label">Finding Management</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-findings.html">Findings</a></li>
+              <li><a href="Ground Services-corrections.html">Corrections</a></li>
+              <li><a href="Ground Services-rootcauses.html">Rootcauses</a></li>
+              <li><a href="Ground Services-corrective-actions.html">Corrective Actions</a></li>
+              <li><a href="Ground Services-prevent-actions.html">Prevent Actions</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-exclamation-triangle"></i>
+                  <span class="nav-label">Risk Management</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-processes.html">Processes</a></li>
+              <li><a href="Ground Services-hazards.html">Hazards</a></li>
+              <li><a href="Ground Services-assesment.html">Assesment</a></li>
+              <li><a href="Ground Services-mitigation-actions.html">Mitigation Actions</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-file"></i>
+                  <span class="nav-label">Reports</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-voluntary.html">Voluntary</a></li>
+              <li><a href="Ground Services-confidential.html">Confidential</a></li>
+              <li><a href="Ground Services-mandatory.html">Mandatory</a></li>
+              <li><a href="Ground Services-occurance.html">Occurance</a></li>
+              <li><a href="Ground Services-investigation.html">Investigation</a></li>
+              <li><a href="Ground Services-analyze.html">Analyze</a></li>
+              <li><a href="Ground Services-actions.html">Actions</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-calendar"></i>
+                  <span class="nav-label">Annual Plans</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-man-hour.html">Man / Hour</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">
+                  <i class="fa fa-gear"></i>
+                  <span class="nav-label">Settings</span>
+                  <span class="fa arrow"></span>
+                </a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="Ground Services-users.html">Users</a></li>
+              <li><a href="Ground Services-register.html">Register</a></li>
+              <li><a href="Ground Services-menus.html">Menus</a></li>
+              <li><a href="Ground Services-roles.html">Roles</a></li>
+              <li><a href="Ground Services-titles.html">Titles</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+      <div class="row border-bottom">
+        <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="#">
+              <div class="form-group">
+                <input type="text" style="color:#ffffff;" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-top-links navbar-right">
+            <li>
+              <span class="m-r-sm text-muted welcome-message">Avi Logic LLC</span>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+              <ul class="dropdown-menu dropdown-messages">
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                    <div class="media-body">
+                      <small class="pull-right">46h ago</small>
+                      <strong>Farzad Niknam BARAZANDEH</strong> added a new product <strong>Boeing 787 - Dreamliner</strong>. <br>
+                      <small class="text-muted">Today at 7:58 pm - 12.06.2017</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                    <div class="media-body ">
+                      <small class="pull-right text-navy" style="margin-left:5px;">1 day ago</small>
+                      <strong>Mehmet Cemal Atlioglu</strong> started a new task <strong>Task #03</strong>. <br>
+                      <small class="text-muted">Yesterday 1:21 pm - 11.06.2017</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="#" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                    <div class="media-body ">
+                      <small class="pull-right">2 days ago</small>
+                      <strong>Dogan Doganay</strong> added new location <strong>JFK</strong>. <br>
+                      <small class="text-muted">2 days ago at 2:30 am - 10.06.2017</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="Ground Services-messages.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-default">8</span>
+                    </a>
+              <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                  <a href="#">
+                    <div>
+                      <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                      <span class="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <i class="fa fa-thumb-tack fa-fw"></i> 3 Tasks Due Today
+                      <span class="pull-right text-muted small">12 minutes ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                      <span class="pull-right text-muted small">6 hours ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="Ground Services-alerts.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+            </li>
+            <li>
+              <a href="Ground Services-login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-4">
+          <h2>Avi Logic QMS</h2>
+          <ol class="breadcrumb">
+            <li class="active">
+              <strong>Certificates</strong>
+            </li>
+          </ol>
+        </div>
+        <div class="col-sm-8">
+          <div class="title-action">
+            <!-- <a href="" class="btn btn-primary triggerAction">An action can be triggerred here!</a> -->
+            <a href="#" data-toggle="modal" data-target="#addNewCertificate" class="btn btn-primary"> Add a new certificate &nbsp; <i class="fa fa-plus"></i> </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="wrapper wrapper-content">
+        <div class="animated fadeIn">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ibox float-e-margins">
+                <!-- <div class="ibox-title">
+                                    <h5>Menus</h5>
+                                </div> -->
+                <div class="ibox-content">
+                  <div class="project-list">
+                    <div class="table-responsive">
+                      <table class="table table-hover sortThisTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>First Auth. Date</th>
+                            <th>Auth. Date</th>
+                            <th>Due Date</th>
+                            <th>Counter</th>
+                            <th>Auditor</th>
+                            <th>Note</th>
+                            <th class="text-right">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A78530</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2020</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 123 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 48%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Ahmet Faruk SEVINC</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A77487</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">22.12.2013</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">22.12.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">06.11.2018</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 118 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 56%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Aysun Nihan SENGOZ</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A27609</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2020</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 92 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 72%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Cabir GUNDUZ</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A46676</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2020</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 243 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 14%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Ertan SAYTAN</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A46690</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2020</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 67 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 87%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Eyup KOC</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="project-status">
+                              <span class="label label-primary">A78558</span>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2016</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">11.03.2020</a>
+                            </td>
+                            <td class="project-completion">
+                              <small>Ends in: 56 days</small>
+                              <div class="progress progress-mini">
+                                <div style="width: 90%;" class="progress-bar"></div>
+                              </div>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Eyup Sabri BAYHAN</a>
+                            </td>
+                            <td class="project-title">
+                              <a href="#">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="project-actions">
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#viewCertificate"><i class="fa fa-search"></i> View </a>
+                              <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editCertificate"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="#" class="btn btn-danger btn-sm deleteCertificate"><i class="fa fa-trash"></i> Delete </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="pull-right">
+          Avi Logic LLC &copy; <span class="currentYearSpan"></span>
+        </div>
+        <div>
+          <!-- <strong>Copyright</strong> Avi Logic LLC &copy; <span class="currentYearSpan"></span> -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="right-sidebar" class="animated">
+      <div class="sidebar-container">
+
+        <ul class="nav nav-tabs navs-3">
+
+          <li class="active"><a data-toggle="tab" href="#tab-1">
+                        Notes
+                    </a></li>
+          <li><a data-toggle="tab" href="#tab-2">
+                        Projects
+                    </a></li>
+          <li class=""><a data-toggle="tab" href="#tab-3">
+                        <i class="fa fa-gear"></i>
+                    </a></li>
+        </ul>
+
+        <div class="tab-content">
+
+
+          <div id="tab-1" class="tab-pane active">
+
+            <div class="sidebar-title">
+              <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+              <!-- <small><i class="fa fa-tim"></i> You have 10 notes.</small> -->
+            </div>
+
+            <div>
+
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a1.jpg">
+
+                    <div class="m-t-xs">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+
+                    There are many variations of passages of Lorem Ipsum available.
+                    <br>
+                    <small class="text-muted">Today 4:21 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a2.jpg">
+                  </div>
+                  <div class="media-body">
+                    The point of using Lorem Ipsum is that it has a more-or-less normal.
+                    <br>
+                    <small class="text-muted">Yesterday 2:45 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a6.jpg">
+
+                    <div class="m-t-xs">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    <br>
+                    <small class="text-muted">Yesterday 1:10 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                  </div>
+
+                  <div class="media-body">
+                    Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                    <br>
+                    <small class="text-muted">Monday 8:37 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a8.jpg">
+                  </div>
+                  <div class="media-body">
+
+                    All the Lorem Ipsum generators on the Internet tend to repeat.
+                    <br>
+                    <small class="text-muted">Today 4:21 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a7.jpg">
+                  </div>
+                  <div class="media-body">
+                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    <br>
+                    <small class="text-muted">Yesterday 2:45 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
+
+                    <div class="m-t-xs">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                    <br>
+                    <small class="text-muted">Yesterday 1:10 pm</small>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-message">
+                <a href="#">
+                  <div class="pull-left text-center">
+                    <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
+                  </div>
+                  <div class="media-body">
+                    Uncover many web sites still in their infancy. Various versions have.
+                    <br>
+                    <small class="text-muted">Monday 8:37 pm</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="tab-2" class="tab-pane">
+
+            <div class="sidebar-title">
+              <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+              <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+            </div>
+
+            <ul class="sidebar-list">
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Business valuation</h4> It is a long established fact that a reader will be distracted.
+
+                  <div class="small">Completion with: 22%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                  </div>
+                  <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2017</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Contract with Company </h4> Many desktop publishing packages and web page editors.
+
+                  <div class="small">Completion with: 48%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 48%;" class="progress-bar"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Meeting</h4> By the readable content of a page when looking at its layout.
+
+                  <div class="small">Completion with: 14%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2017</div>
+                                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Business valuation</h4> It is a long established fact that a reader will be distracted.
+
+                  <div class="small">Completion with: 22%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                  </div>
+                  <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2017</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Contract with Company </h4> Many desktop publishing packages and web page editors.
+
+                  <div class="small">Completion with: 48%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 48%;" class="progress-bar"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="small pull-right m-t-xs">9 hours ago</div>
+                  <h4>Meeting</h4> By the readable content of a page when looking at its layout.
+
+                  <div class="small">Completion with: 14%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2017</div>
+                                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div id="tab-3" class="tab-pane">
+
+            <div class="sidebar-title">
+              <h3><i class="fa fa-gears"></i> Settings</h3>
+              <small><i class="fa fa-tim"></i> You can have your customized settings.</small>
+            </div>
+
+            <div class="setings-item">
+              <span>
+                        Show notifications
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                  <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Disable IM
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                  <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Enable history
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                  <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Show charts
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                  <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Online users
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                  <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Global search
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                  <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="setings-item">
+              <span>
+                        Update everyday
+                    </span>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                  <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-content">
+              <h4>Settings</h4>
+              <div class="small">
+                I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Over the years, sometimes by accident, sometimes on purpose
+                (injected humour and the like).
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="modal inmodal fade" id="addNewCertificate" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+            <h2 class="modal-title">
+                            Add a New Certificate <i class="fa fa-certificate text-muted"></i>
+                        </h2>
+          </div>
+
+          <div class="modal-body" style="">
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Auditor</label>
+                  <div class="input-group" style="width:100%">
+                    <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                <option>Select</option>
+                                                <option>Ali Sezen</option>
+                                                <option>Aysun Nihan Sengoz</option>
+                                                <option>Belya Duz</option>
+                                                <option>Cabir Gunduz</option>
+                                                <option>Cem Koray Hanedan</option>
+                                                <option>Cihan Kaplan</option>
+                                                <option>...</option>
+                                            </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>No</label>
+                  <input type="number" placeholder="No" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>First Auth. Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="  /  /    ">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>Auth. Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="  /  /    ">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>Due Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="  /  /    ">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Note</label>
+                  <input type="text" placeholder="Note" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <div class="i-checks" style="margin-top:6px;">
+                    <label>
+                                            <input type="checkbox" checked="">
+                                            <i></i>&nbsp; Create Certificate
+                                        </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary save" id="saveCertificate"> <i class="fa fa-save"></i> &nbsp; Save </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal inmodal fade" id="editCertificate" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+            <h2 class="modal-title">
+                            Edit Certificate <i class="fa fa-certificate text-muted"></i>
+                        </h2>
+          </div>
+
+          <div class="modal-body" style="">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Auditor</label>
+                  <div class="input-group" style="width:100%">
+                    <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                                                <option>Ahmet Faruk SEVINC</option>
+                                                <option>Ali Sezen</option>
+                                                <option>Aysun Nihan Sengoz</option>
+                                                <option>Belya Duz</option>
+                                                <option>Cabir Gunduz</option>
+                                                <option>Cem Koray Hanedan</option>
+                                                <option>Cihan Kaplan</option>
+                                                <option>...</option>
+                                            </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>No</label>
+                  <input type="text" placeholder="No" class="form-control" value="A78530">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>First Auth. Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="22.12.2013">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>Auth. Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="22.12.2016">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group" id="data_1">
+                  <label>Due Date</label>
+                  <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="06.11.2018">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Note</label>
+                  <input type="text" placeholder="Note" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <div class="i-checks" style="margin-top:6px;">
+                    <label>
+                                            <input type="checkbox" checked="">
+                                            <i></i>&nbsp; Edit Certificate
+                                        </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary save" id="updateCertificate"> <i class="fa fa-save"></i> &nbsp; Update </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal inmodal fade" id="viewCertificate" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+            <h2 class="modal-title">
+                            Certificate Details <i class="fa fa-certificate text-muted"></i>
+                        </h2>
+          </div>
+
+          <div class="modal-body" style="">
+            <div class="row">
+              <div class="col-lg-12">
+                <span><strong>No :</strong></span> A78530
+              </div>
+              <br><br><br>
+              <div class="col-lg-4">
+                <span><strong>First Auth. Date :</strong></span> 11.03.2016
+              </div>
+              <div class="col-lg-4">
+                <span><strong>Auth. Date :</strong></span> 11.03.2016
+              </div>
+              <div class="col-lg-4">
+                <span><strong>Due Date :</strong></span> 11.03.2020
+              </div>
+              <br><br><br>
+              <div class="col-lg-4">
+                <span><strong>Auditor :</strong></span> Ahmet Faruk SEVINC
+              </div>
+              <div class="col-lg-8">
+                <span><strong>Note :</strong></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-2">
+                <button class="btn btn-outline btn-primary btn-block"> <i class="fa fa-list-ul"></i> Scope </button>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-outline btn-primary btn-block"> <i class="fa fa-paperclip"></i> Copy </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+  <script src="js/plugins/pace/pace.min.js"></script>
+
+  <!-- Sweet alert -->
+  <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+  <!-- Chosen -->
+  <script src="js/plugins/chosen/chosen.jquery.js"></script>
+  <!-- iCheck -->
+  <script src="js/plugins/iCheck/icheck.min.js"></script>
+  <!-- Date picker -->
+  <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+  <!-- Date range use moment.js same as full calendar plugin -->
+  <script src="js/plugins/fullcalendar/moment.min.js"></script>
+  <!-- Date range picker -->
+  <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+
+  <!-- Table Sorter -->
+  <script src="js/plugins/tablesorter/jquery.tablesorter.js"></script>
+
+
+  <script type="text/javascript">
+    printCurrentDate();
+    removeLoader();
+
+    $('.i-checks').iCheck({
+      checkboxClass: 'icheckbox_square-red',
+      radioClass: 'iradio_square-red',
+    });
+
+    $('#data_1 .input-group.date').datepicker({
+      todayBtn: "linked",
+      keyboardNavigation: false,
+      forceParse: false,
+      calendarWeeks: true,
+      autoclose: true
+    });
+
+    $('table.sortThisTable').tablesorter();
+
+    $('a.deleteCertificate').on('click', function(e) {
+      e.preventDefault();
+      swal({
+          title: "Are you sure?",
+          text: "Certificate will be deleted!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#ce3b4b",
+          confirmButtonText: "Yes, delete it!",
+          cancelButtonText: "No, cancel please!",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
+        function(isConfirm) {
+          if (isConfirm) {
+            swal({
+              title: "Deleted!",
+              text: "Certificate is now deleted.",
+              type: "success",
+              confirmButtonColor: "#ce3b4b"
+            });
+          } else {
+            swal({
+              title: "Cancelled!",
+              text: "Certificate was NOT deleted!",
+              type: "error",
+              confirmButtonColor: "#ce3b4b"
+            });
+          }
+        });
+    });
+
+
+    $('button#saveCertificate').on('click', function() {
+      swal({
+        title: "Saved!",
+        text: "New certificate succesfully saved!",
+        type: "success",
+        showConfirmButton: false,
+        timer: 2000
+      }, function() {
+        location.reload();
+      });
+    });
+
+    $('button#updateCertificate').on('click', function() {
+      swal({
+        title: "Updated!",
+        text: "Existing certificate succesfully updated!",
+        type: "success",
+        showConfirmButton: false,
+        timer: 2000
+      }, function() {
+        location.reload();
+      });
+    });
+
+    $('#addNewCertificate').on('shown.bs.modal', function() {
+      $('.chosen-select', this).chosen('destroy').chosen();
+    });
+
+    $('#editCertificate').on('shown.bs.modal', function() {
+      $('.chosen-select', this).chosen('destroy').chosen();
+    });
+  </script>
+</body>
+
+</html>

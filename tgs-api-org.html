@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!--
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+[[[[[[[  Dogan Doganay  ]]]]]]]]
+[[[[[[[[[  May 2016   ]]]]]]]]]]
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TGS | AD Users</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+  <!-- Data Tables -->
+  <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
+  <link href="css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
+
+  <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="logo-element">
+              API
+            </div>
+          </li>
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="fa fa-folder-o"></i>
+              <span class="nav-label">AD User Service</span> <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level">
+              <li class="active"><a href="tgs-api.html">Get Users by Selection</a></li>
+              <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+      <div class="row border-bottom">
+      </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-4">
+          <h2>AD Users</h2>
+          <ol class="breadcrumb">
+            <li>
+              <a href="#">AD User Service</a>
+            </li>
+            <li class="active">
+              <strong>Get Users by Selection</strong>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="wrapper wrapper-content animated fadeInDown">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title text-left text-danger">
+                <h4>Criterias</h4>
+              </div>
+
+              <div class="ibox-content">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="form-group myRequiredField">
+                      <label>Station</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select selectOfAirportCode" tabindex="2" style="width:inherit;">
+                          <option value="">Sec</option>
+                          <option value="ADA">ADA</option>
+                          <option value="ADB">ADB</option>
+                          <option value="AYT">AYT</option>
+                          <option value="BJV">BJV</option>
+                          <option value="DLM">DLM</option>
+                          <option value="ESB">ESB</option>
+                          <option value="GM">GM</option>
+                          <option value="IST">IST</option>
+                          <option value="Ist Istasyon Basmüdürlügü">IST İstasyon Başmüdürlüğü</option>
+                          <option value="SAW">SAW</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group myRequiredField">
+                      <label>Department</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select selectOfDepartment" tabindex="2" style="width:inherit;">
+                          <option value="">Sec</option>
+                          <option value="Atölye Müdürlügü">Atölye Müdürlügü</option>
+                          <option value="Bilet Satis Müdürlügü">Bilet Satis Müdürlügü</option>
+                          <option value="Bilet Satis Sefligi">Bilet Satis Sefligi</option>
+                          <option value="Harekat Müdürlügü">Harekat Müdürlügü</option>
+                          <option value="Istasyon Basmüdürlügü">Istasyon Basmüdürlügü</option>
+                          <option value="Ramp Müdürlügü">Ramp Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri Müdürlügü">Yolcu Hizmetleri Müdürlügü</option>
+                          <option value="Adb Ramp Müdürlügü">Adb Ramp Müdürlügü</option>
+                          <option value="Idari Isler ve Lojistik Müdürlügü">Idari Isler ve Lojistik Müdürlügü</option>
+                          <option value="Insan Kaynaklari Müdürlügü">Insan Kaynaklari Müdürlügü</option>
+                          <option value="Istasyon Bagaj Hizmetleri Koordinasyon Müdürlügü">Istasyon Bagaj Hizmetleri Koordinasyon Müdürlügü</option>
+                          <option value="Istasyon Harekat Müdürlügü">Istasyon Harekat Müdürlügü</option>
+                          <option value="Istasyon Yolcu Hizmetleri Müdürlügü">Istasyon Yolcu Hizmetleri Müdürlügü</option>
+                          <option value="Istasyon Yolcu Hizmetleri ve Koordinasyon Müdürlügü">Istasyon Yolcu Hizmetleri ve Koordinasyon Müdürlügü</option>
+                          <option value="Kargo Müdürlügü">Kargo Müdürlügü</option>
+                          <option value="Muhasebe Sefligi">Muhasebe Sefligi</option>
+                          <option value="Yolcu Hizmetleri ve Koordinasyon Müdürlügü">Yolcu Hizmetleri ve Koordinasyon Müdürlügü</option>
+                          <option value="Apron Hizmetleri Müdürlügü">Apron Hizmetleri Müdürlügü</option>
+                          <option value="Harekat Koordinasyon Müdürlügü">Harekat Koordinasyon Müdürlügü</option>
+                          <option value="Istasyon Atölye Müdürlügü">Istasyon Atölye Müdürlügü</option>
+                          <option value="Istasyon Bagaj Hizmetleri Müdürlügü">Istasyon Bagaj Hizmetleri Müdürlügü</option>
+                          <option value="Istasyon Doktorluk Birimi">Istasyon Doktorluk Birimi</option>
+                          <option value="Istasyon Kargo Müdürlügü">Istasyon Kargo Müdürlügü</option>
+                          <option value="Istasyon Ramp Müdürlügü">Istasyon Ramp Müdürlügü</option>
+                          <option value="Istasyon Uçak Temizlik Müdürlügü">Istasyon Uçak Temizlik Müdürlügü</option>
+                          <option value="Istasyon Vize Pasaport Müdürlügü">Istasyon Vize Pasaport Müdürlügü</option>
+                          <option value="Uçak Temizlik Koordinasyon Müdürlügü">Uçak Temizlik Koordinasyon Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri Koordinasyon Müdürlügü">Yolcu Hizmetleri Koordinasyon Müdürlügü</option>
+                          <option value="Atölye Sefligi">Atölye Sefligi</option>
+                          <option value="Bilisim Teknolojileri">Bilisim Teknolojileri</option>
+                          <option value="Bilisim Teknolojileri Müdürlügü">Bilisim Teknolojileri Müdürlügü</option>
+                          <option value="Egitim Müdürlügü">Egitim Müdürlügü</option>
+                          <option value="Idai Isler ve Lojistik Sefligi">Idai Isler ve Lojistik Sefligi</option>
+                          <option value="Idari Isler Lojistik Müdürlügü">Idari Isler Lojistik Müdürlügü</option>
+                          <option value="Idari Isler ve Lojistik Sefligi">Idari Isler ve Lojistik Sefligi</option>
+                          <option value="Insan Kaynaklari ve Egitim Sefligi">Insan Kaynaklari ve Egitim Sefligi</option>
+                          <option value="Teknisyen Müdürlügü">Teknisyen Müdürlügü</option>
+                          <option value="Istasyon Bilet Satis Müdürlügü">Istasyon Bilet Satis Müdürlügü</option>
+                          <option value="Istasyon Bilisim Teknolojileri Müdürlügü">Istasyon Bilisim Teknolojileri Müdürlügü</option>
+                          <option value="Istasyon Müdürlügü">Istasyon Müdürlügü</option>
+                          <option value="Apron - Harekat Müdürlügü">Apron - Harekat Müdürlügü</option>
+                          <option value="Yolcu Müdürlügü">Yolcu Müdürlügü</option>
+                          <option value="Ramp Koordinasyon Müdürlügü">Ramp Koordinasyon Müdürlügü</option>
+                          <option value="Vip Cip Müdürlügü">Vip Cip Müdürlügü</option>
+                          <option value="Genel Müdürlük">Genel Müdürlük</option>
+                          <option value="Bilgi Analizi ve Proje Müdürlügü">Bilgi Analizi ve Proje Müdürlügü</option>
+                          <option value="Finans Müdürlügü">Finans Müdürlügü</option>
+                          <option value="Havacilik Güvenligi Müdürlügü">Havacilik Güvenligi Müdürlügü</option>
+                          <option value="Hukuk Bürosu">Hukuk Bürosu</option>
+                          <option value="Iç Denetim Müdürlügü">Iç Denetim Müdürlügü</option>
+                          <option value="Iç Mevzuat ve Evrak Takip Müdürlügü">Iç Mevzuat ve Evrak Takip Müdürlügü</option>
+                          <option value="Isletme Planlama ve Koordinasyon Müdürlügü">Isletme Planlama ve Koordinasyon Müdürlügü</option>
+                          <option value="Kurumsal Iletisim Müdürlügü">Kurumsal Iletisim Müdürlügü</option>
+                          <option value="Muhasebe Müdürlügü">Muhasebe Müdürlügü</option>
+                          <option value="Operasyonel Risk Takip Müdürlügü">Operasyonel Risk Takip Müdürlügü</option>
+                          <option value="Pazarlama Anlasmalar Müdürlügü">Pazarlama Anlasmalar Müdürlügü</option>
+                          <option value="Satinalma Müdürlügü">Satinalma Müdürlügü</option>
+                          <option value="Teknik Müdürlük">Teknik Müdürlük</option>
+                          <option value="Yönetim">Yönetim</option>
+                          <option value="Yönetim Sistemleri Müdürlügü">Yönetim Sistemleri Müdürlügü</option>
+                          <option value="Insan Kaynaklari ve Egitim Müdürlügü">Insan Kaynaklari ve Egitim Müdürlügü</option>
+                          <option value="Atölye Müdürlüü">Atölye Müdürlüü</option>
+                          <option value="Bagaj Hizmetleri Koord. Müdürlügü">Bagaj Hizmetleri Koord. Müdürlügü</option>
+                          <option value="Bagaj Hizmetleri Koordinasyon Müdürlügü">Bagaj Hizmetleri Koordinasyon Müdürlügü</option>
+                          <option value="Bagaj Hizmetleri Memuru">Bagaj Hizmetleri Memuru</option>
+                          <option value="Bagaj Hizmetleri Müdürlügü">Bagaj Hizmetleri Müdürlügü</option>
+                          <option value="Basmüdürlük">Basmüdürlük</option>
+                          <option value="Bilet Satis Müdürü">Bilet Satis Müdürü</option>
+                          <option value="Istasyon Bas Müdürlügü">Istasyon Bas Müdürlügü</option>
+                          <option value="Istasyon Genel Havacilik Müdürlügü">Istasyon Genel Havacilik Müdürlügü</option>
+                          <option value="Istasyon Yolcu Hizmetleri Koordinasyon Müdürlügü">Istasyon Yolcu Hizmetleri Koordinasyon Müdürlügü</option>
+                          <option value="IstasyonYolcu Hizmetleri Müdürlügü">IstasyonYolcu Hizmetleri Müdürlügü</option>
+                          <option value="Kargo Koordinasyon Müdürlügü">Kargo Koordinasyon Müdürlügü</option>
+                          <option value="Puantaj Sefligi">Puantaj Sefligi</option>
+                          <option value="Ramp Müdürülügü">Ramp Müdürülügü</option>
+                          <option value="Uçak Temizlik Müdürlügü">Uçak Temizlik Müdürlügü</option>
+                          <option value="Vize - Pasaport Müdürlügü">Vize - Pasaport Müdürlügü</option>
+                          <option value="Vize Pasaport Müdürlügü">Vize Pasaport Müdürlügü</option>
+                          <option value="Vize-Pasaport Müdürlügü">Vize-Pasaport Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri Koord. Müdürlügü">Yolcu Hizmetleri Koord. Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri Kordinasyon Müdürlügü">Yolcu Hizmetleri Kordinasyon Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri ve Koordiinasyon Müdürlügü">Yolcu Hizmetleri ve Koordiinasyon Müdürlügü</option>
+                          <option value="Marketing and Contracts">Marketing and Contracts</option>
+                          <option value="Istasyon Harekat Koordinasyon Müdürlügü">Istasyon Harekat Koordinasyon Müdürlügü</option>
+                          <option value="Istasyon Idari Isler ve Lojistik Müdürlügü">Istasyon Idari Isler ve Lojistik Müdürlügü</option>
+                          <option value="Istasyon Ramp Koordinasyon Müdürlügü">Istasyon Ramp Koordinasyon Müdürlügü</option>
+                          <option value="Ramp  Müdürlügü">Ramp  Müdürlügü</option>
+                          <option value="Yolcu Hizmetleri Memuru">Yolcu Hizmetleri Memuru</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group myRequiredField">
+                      <label>Title</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select selectOfTitle" tabindex="2" style="width:inherit;">
+                          <option value="">Sec</option>
+                          <option value="">Atölye İşçi Şoför</option>
+                          <option value="">Atölye İşçisi</option>
+                          <option value="">Atölye Memuru</option>
+                          <option value="">Atölye Memuru (Satınalma)</option>
+                          <option value="">Atölye Müdürü</option>
+                          <option value="">Atölye Şefi</option>
+                          <option value="">Atölye Şefi (Depo)</option>
+                          <option value="">Bagaj Hizmetleri İşçi Şoför</option>
+                          <option value="">Bagaj Hizmetleri İşçisi</option>
+                          <option value="">Bagaj Hizmetleri Kontuar İşçisi</option>
+                          <option value="">Bagaj Hizmetleri Koordinasyon Müdürü (Vekil)</option>
+                          <option value="">Bagaj Hizmetleri Memuru</option>
+                          <option value="">Bagaj Hizmetleri Operatör Şoför</option>
+                          <option value="">Bagaj Hizmetleri Postabaşı</option>
+                          <option value="">Bagaj Hizmetleri Sorumlu İşçisi</option>
+                          <option value="">Bagaj Hizmetleri Şefi</option>
+                          <option value="">Bagaj Koordinasyon Hizmetleri İşçisi</option>
+                          <option value="">Basın Memuru</option>
+                          <option value="">Basın Müşaviri</option>
+                          <option value="">Basın Şefi</option>
+                          <option value="">Bilet Satış İşçisi</option>
+                          <option value="">Bilet Satış Koordinasyon Şefi</option>
+                          <option value="">Bilet Satış Memuru</option>
+                          <option value="">Bilet Satış Memuru (Şef Vekili)</option>
+                          <option value="">Bilet Satış Müdürü</option>
+                          <option value="">Bilet Satış Sorumlu Memuru</option>
+                          <option value="">Bilgi Analizi ve Proje Memuru</option>
+                          <option value="">Bilgi Analizi ve Proje Müdürü</option>
+                          <option value="">Bilgi Analizi ve Proje Şefi</option>
+                          <option value="">Bilişim Teknolojileri Memuru</option>
+                          <option value="">Bilişim Teknolojileri Müdürü - IT Manager</option>
+                          <option value="">Bilişim Teknolojileri Şefi</option>
+                          <option value="">Bilişim Teknolojileri Uzman Yardımcısı</option>
+                          <option value="">Bilişim Teknolojileri Uzmanı</option>
+                          <option value="">Business Jet Handling Coordinator</option>
+                          <option value="">Business Jet Handling Coordinator Operation Agent</option>
+                          <option value="">Danışman</option>
+                          <option value="">Eğitim Memuru</option>
+                          <option value="">Eğitim Müdürü</option>
+                          <option value="">Eğitim Şefi</option>
+                          <option value="">Finans Memuru</option>
+                          <option value="">Finans Müdürü</option>
+                          <option value="">Finans Şefi</option>
+                          <option value="">Genel Müdür</option>
+                          <option value="">Genel Müdür Yardımcısı - İK ve İdari İşler</option>
+                          <option value="">Genel Müdür Yardımcısı - İşletme</option>
+                          <option value="">Genel Müdür Yardımcısı - İşletme(Anadolu)</option>
+                          <option value="">Genel Müdür Yardımcısı - İşletme(İstanbul)</option>
+                          <option value="">Genel Müdür Yardımcısı - Mali İşler</option>
+                          <option value="">Gm Bilişim Teknolojileri</option>
+                          <option value="">Harekat Dispatch</option>
+                          <option value="">Harekat İşçi Şoför</option>
+                          <option value="">Harekat İşçisi</option>
+                          <option value="">Harekat Koordinasyon Müdürü</option>
+                          <option value="">Harekat Koordinasyon Şefi</option>
+                          <option value="">Harekat Memuru</option>
+                          <option value="">Harekat Memuru (Şef Vekili)</option>
+                          <option value="">Harekat Müdürü</option>
+                          <option value="">Harekat Müdürü (Vekil)</option>
+                          <option value="">Harekat Şefi</option>
+                          <option value="">Havacılık Güvenliği Memuru</option>
+                          <option value="">Havacılık Güvenliği Müdürü</option>
+                          <option value="">Havacılık Güvenliği Şefi</option>
+                          <option value="">Hukuk İşleri İşçi Şoför</option>
+                          <option value="">Hukuk İşleri-Avukat</option>
+                          <option value="">İç Denetçi</option>
+                          <option value="">İç Denetim Müdürü</option>
+                          <option value="">İç Mevzuat ve Evrak Takip İşçisi</option>
+                          <option value="">İç Mevzuat ve Evrak Takip Memuru</option>
+                          <option value="">İç Mevzuat ve Evrak Takip Müdürü</option>
+                          <option value="">İç Mevzuat ve Evrak Takip Şefi</option>
+                          <option value="">İç Mevzuat ve Evrak Takip Şoförü</option>
+                          <option value="">İdari İşler ve Lojistik İşçi Şoför</option>
+                          <option value="">İdari İşler ve Lojistik İşçisi</option>
+                          <option value="">İdari İşler ve Lojistik Memuru</option>
+                          <option value="">İdari İşler ve Lojistik Müdürü</option>
+                          <option value="">İdari İşler ve Lojistik Sorumlu İşçisi</option>
+                          <option value="">İdari İşler ve Lojistik Şefi</option>
+                          <option value="">İdari İşler ve Lojistik Şoför</option>
+                          <option value="">İnsan Kaynakları GMY</option>
+                          <option value="">İnsan Kaynakları Memuru</option>
+                          <option value="">İnsan Kaynakları Müdürlüğü</option>
+                          <option value="">İnsan Kaynakları Müdürü</option>
+                          <option value="">İnsan Kaynakları Şefi</option>
+                          <option value="">İnsan Kaynakları ve Eğitim Memuru</option>
+                          <option value="">İstasyon Apron - Harekat Müdürü</option>
+                          <option value="">İstasyon Başmüdürü</option>
+                          <option value="">İstasyon Genel Havacılık Müdürü</option>
+                          <option value="">İstasyon Müdürü</option>
+                          <option value="">İstasyon Nöbetçi Müdürü</option>
+                          <option value="">İş Güvenliği Uzmanı</option>
+                          <option value="">İşçi</option>
+                          <option value="">İşçi Şöför</option>
+                          <option value="">İşçi/Şoför</option>
+                          <option value="">İşletme Koordinasyon Memuru</option>
+                          <option value="">İşletme Planlama Memuru</option>
+                          <option value="">İşletme Planlama Şefi</option>
+                          <option value="">İşletme Planlama ve Koordinasyon Müdürü</option>
+                          <option value="">Kargo İşçi Şoför</option>
+                          <option value="">Kargo İşçisi</option>
+                          <option value="">Kargo Koordinasyon Müdürü</option>
+                          <option value="">Kargo Memuru</option>
+                          <option value="">Kargo Memuru (Şef Vekili)</option>
+                          <option value="">Kargo Operatör Şoför</option>
+                          <option value="">Kargo Postabaşı</option>
+                          <option value="">Kargo Postabaşı (Şef Vekili)</option>
+                          <option value="">Kargo Sorumlu İşçi</option>
+                          <option value="">Kargo Şefi</option>
+                          <option value="">Key Account Manager</option>
+                          <option value="">Kurumsal İletişim Memuru</option>
+                          <option value="">Kurumsal İletişim Müdürü</option>
+                          <option value="">Kurumsal İletişim Şefi</option>
+                          <option value="">Laboratuvar - Ata İstasyon</option>
+                          <option value="">Marangoz</option>
+                          <option value="">Marketing & Contracts Manager</option>
+                          <option value="">Marketing and Conctracts Specialist</option>
+                          <option value="">Marketing and Contracts Specialist</option>
+                          <option value="">Marketing and Contracts Supervisor</option>
+                          <option value="">Muhasebe Memuru</option>
+                          <option value="">Muhasebe Müdürü</option>
+                          <option value="">Muhasebe Şefi</option>
+                          <option value="">Operasyonel Risk Takip Müdürü</option>
+                          <option value="">Operasyonel Risk Takip Şefi</option>
+                          <option value="">Operation&Ramp Coor. Supervisor</option>
+                          <option value="">Özel Kalem</option>
+                          <option value="">Passenger Service Coor. Supervisor</option>
+                          <option value="">Puantaj İşçisi</option>
+                          <option value="">Puantaj Memuru</option>
+                          <option value="">Puantaj Sorumlu İşçi</option>
+                          <option value="">Puantaj Şefi</option>
+                          <option value="">Purchasing Officer</option>
+                          <option value="">Ramp İşçi</option>
+                          <option value="">Ramp İşçi Şoför</option>
+                          <option value="">Ramp İşçisi</option>
+                          <option value="">Ramp İşçisi (Engelli)</option>
+                          <option value="">Ramp İşçi-Şoför</option>
+                          <option value="">Ramp Koordinasyon Müdürü</option>
+                          <option value="">Ramp Makinist</option>
+                          <option value="">Ramp Müdürü</option>
+                          <option value="">Ramp Müdürü (Vekil)</option>
+                          <option value="">Ramp Operatör Şoför</option>
+                          <option value="">Ramp Planlama Memuru</option>
+                          <option value="">Ramp Postabaşı</option>
+                          <option value="">Ramp Sorumlu İşçi</option>
+                          <option value="">Ramp Şefi</option>
+                          <option value="">Ramp Şefi Vekili</option>
+                          <option value="">Safety Management</option>
+                          <option value="">Satınalma Memuru</option>
+                          <option value="">Satınalma Müdürü</option>
+                          <option value="">Satınalma Şefi</option>
+                          <option value="">Teknik Memur</option>
+                          <option value="">Teknik Memur/Technical Officer</option>
+                          <option value="">Teknik Müdür / Technical Manager</option>
+                          <option value="">Teknik Şef/Technical Supervisor</option>
+                          <option value="">Teknisyen</option>
+                          <option value="">Teknisyen ( Elektrik)</option>
+                          <option value="">Teknisyen (Boya- Kaporta-Kaynak)</option>
+                          <option value="">Teknisyen (Boya-Kaporta-Kaynak)</option>
+                          <option value="">Teknisyen (Elektrik)</option>
+                          <option value="">Teknisyen (Kaynak)</option>
+                          <option value="">Teknisyen (Lastik)</option>
+                          <option value="">Teknisyen (Mekanik)</option>
+                          <option value="">Teknisyen (Mekanik-Oto Elektrik)</option>
+                          <option value="">Teknisyen (Sistem Elektrik)</option>
+                          <option value="">Uçak Temizlik İşçi Şoför</option>
+                          <option value="">Uçak Temizlik İşçisi</option>
+                          <option value="">Uçak Temizlik Koordinasyon Müdürü</option>
+                          <option value="">Uçak Temizlik Memuru</option>
+                          <option value="">Uçak Temizlik Operatör Şoför</option>
+                          <option value="">Uçak Temizlik Postabaşı</option>
+                          <option value="">Uçak Temizlik Sorumlu İşçi</option>
+                          <option value="">Uçak Temizlik Sorumlu İşçisi</option>
+                          <option value="">Uçak Temizlik Şefi</option>
+                          <option value="">VIP CIP Müdürü</option>
+                          <option value="">VIP CIP Şefi</option>
+                          <option value="">Vize Pasaport İşçisi</option>
+                          <option value="">Vize Pasaport Memuru</option>
+                          <option value="">Vize-Pasaport İşçisi</option>
+                          <option value="">Vize-Pasaport Kontuar İşçisi</option>
+                          <option value="">Vize-Pasaport Memuru</option>
+                          <option value="">Vize-Pasaport Şefi</option>
+                          <option value="">Yolcu Hizmetleri</option>
+                          <option value="">Yolcu Hizmetleri İşçi Şoför</option>
+                          <option value="">Yolcu Hizmetleri Kontuar İşçi</option>
+                          <option value="">Yolcu Hizmetleri Kontuar İşçisi</option>
+                          <option value="">Yolcu Hizmetleri Koordinasyon Müdürü</option>
+                          <option value="">Yolcu Hizmetleri Memuru</option>
+                          <option value="">Yolcu Hizmetleri Müdürü</option>
+                          <option value="">Yolcu Hizmetleri Müdürü (Vekil)</option>
+                          <option value="">Yolcu Hizmetleri Sorumlu Memur</option>
+                          <option value="">Yolcu Hizmetleri Sorumlu Memuru</option>
+                          <option value="">Yolcu Hizmetleri Şefi</option>
+                          <option value="">Yönetici Asistanı</option>
+                          <option value="">Yönetici Asistanı - Mali İşler</option>
+                          <option value="">Yönetici Şoförü</option>
+                          <option value="">Yönetim Kurulu Başkanı</option>
+                          <option value="">Yönetim Kurulu Üyesi</option>
+                          <option value="">Yönetim Sistemleri Memuru</option>
+                          <option value="">Yönetim Sistemleri Müdürü</option>
+                          <option value="">Yönetim Sistemleri Şefi</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row hideAtTheBeginning">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title text-left">
+                <h2>Results</h2>
+                <div class="ibox-tools">
+                  <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="ibox-content">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered table-hover dataTables-example">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>ID</th>
+                        <th>displayName</th>
+                        <th>sAMAccountName</th>
+                        <th>title</th>
+                        <th>department</th>
+                        <th>physicalDeliveryOfficeName</th>
+                        <th>givenname</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="text-left" id="data">
+
+                    <script id="myTemplatingTest" type="text/x-handlebars-template">
+                        <tr class="gradeX" id="{{CategoryID}}">
+                          <td>{{helperCounter}}</td>
+                          <td>{{id}}</td>
+                          <td>{{displayName}}</td>
+                          <td>{{sAMAccountName}}</td>
+                          <td>{{title}}</td>
+                          <td>{{department}}</td>
+                          <td>{{physicalDeliveryOfficeName}}</td>
+                          <td>{{givenname}}</td>
+                        </tr>
+                      </script>
+
+                    </tbody>
+                  </table>
+
+                  <!-- <div class="spiner-example">
+                    <div class="sk-spinner sk-spinner-cube-grid">
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="pull-right">
+          Ground Services &copy; <span class="currentYearSpan"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+  <script src="js/plugins/pace/pace.min.js"></script>
+  <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+  <!-- Data Tables -->
+  <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+  <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+  <script src="js/plugins/dataTables/dataTables.responsive.js"></script>
+  <script src="js/plugins/dataTables/dataTables.tableTools.min.js"></script>
+
+  <!-- Chosen -->
+  <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+  <!-- Handlebars -->
+  <script src="js/handlebars/handlebars.js"></script>
+
+
+  <script>
+  printCurrentDate();
+  removeLoader();
+
+    //page initialization stuff. gets everything ready to be rendered
+    (function() {
+      var resultContainer = $('.hideAtTheBeginning');
+      var spinner = $('div.spiner-example');
+      var $body = $('body');
+
+      resultContainer.hide();
+      spinner.hide();
+
+      $('.chosen-select').chosen();
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function(x) {
+        var target = $(x.target).attr("href"); // tab that is activated
+        $(target).find('.chosen-select').chosen('destroy').chosen();
+      });
+
+      $.each($('select.selectOfTitle').find('option').not(":eq(0)"), function() {
+        $(this).attr('value', $(this).text());
+      });
+
+      $(document).on({
+        ajaxStart: function() {
+          spinner.show();
+          swal({
+            title: '<span class="text-navy"> Yükleniyor </span>',
+            text: `<div class="spiner-example">
+                    <div class="sk-spinner sk-spinner-cube-grid" style="width:75px; height:75px;">
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                      <div class="sk-cube"></div>
+                    </div>
+                  </div>`,
+            html: true,
+            customClass: "spinner",
+            showConfirmButton: false
+              // animation: 'slide-from-top',
+          });
+        },
+        ajaxStop: function() {
+          swal.close()
+        }
+      });
+
+      // $('.dataTables-example').DataTable(
+      //     {
+      //     // "dom": 'lTfigt', //to hide the button on the top
+      //     "tableTools": {
+      //       "sSwfPath": "js/plugins/dataTables/swf/copy_csv_xls_pdf.swf"
+      //     },
+      //     "bPaginate": false,
+      //     'bFilter': false,
+      //     'bInfo': false
+      //   }
+      // );
+    })()
+  </script>
+
+
+
+  <script>
+    $('.selectOfAirportCode').on('change', function(evt, params) {
+      $('.hideAtTheBeginning').show();
+      var airportCode = params.selected;
+      if (airportCode == "") {
+        $('.hideAtTheBeginning').hide();
+      } else if (airportCode != null) {
+        $('tr.gradeX').remove();
+        // $.getJSON("http://testapi.tgs.aero/api/User/getByAirportCode/" + airportCode, function(data) {
+        $.getJSON("http://localhost:1449/api/User/getByAirportCode/" + airportCode, function(data) {
+          var counter = 1;
+          Handlebars.registerHelper('helperCounter', function() {
+            return counter++;
+          });
+          $.each(data, function(key, value) {
+            var template = Handlebars.compile($('#myTemplatingTest').html());
+            $("tbody#data").append(template(value));
+          })
+        });
+      }
+
+    });
+  </script>
+  <script>
+    $('.selectOfDepartment').on('change', function(evt, params) {
+      $('.hideAtTheBeginning').show();
+      var airportCode = params.selected;
+      if (airportCode == "") {
+        $('.hideAtTheBeginning').hide();
+      } else if (airportCode != null) {
+        $('tr.gradeX').remove();
+        $.getJSON("http://localhost:1449/api/User/getByDepartment/" + airportCode, function(data) {
+          var counter = 1;
+          Handlebars.registerHelper('helperCounter', function() {
+            return counter++;
+          });
+          $.each(data, function(key, value) {
+            var template = Handlebars.compile($('#myTemplatingTest').html());
+            $("tbody#data").append(template(value));
+          })
+        });
+      }
+    });
+  </script>
+  <script>
+    $('.selectOfTitle').on('change', function(evt, params) {
+      $('.hideAtTheBeginning').show();
+      var title = params.selected;
+      if (title == "") {
+        $('.hideAtTheBeginning').hide();
+      } else if (title != null) {
+        $('tr.gradeX').remove();
+        $.getJSON("http://localhost:1449/api/User/getByTitle/" + title, function(data) {
+          var counter = 1;
+          Handlebars.registerHelper('helperCounter', function() {
+            return counter++;
+          });
+          $.each(data, function(key, value) {
+            var template = Handlebars.compile($('#myTemplatingTest').html());
+            $("tbody#data").append(template(value));
+          })
+        });
+      }
+    });
+  </script>
+  <style>
+    .sweet-alert .spinner {
+      width: 100px !important;
+      height: 100px;
+    }
+  </style>
+</body>
+</html>
