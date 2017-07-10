@@ -293,7 +293,7 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
                             </a>
                             <ul class="dropdown-menu dropdown-alerts">
                                 <li>
@@ -372,7 +372,11 @@
                                             <input type="radio" checked value="completeReport" name="a"> <i></i> Complete Report
                                         </label>
                                     </div>
-
+                                    <div class="i-checks">
+                                        <label>
+                                            <input type="radio" value="wchReport" name="a"> <i></i> WCH Report
+                                        </label>
+                                    </div>
                                     <div class="i-checks">
                                         <label>
                                             <input type="radio" value="inadReport" name="a"> <i></i> INAD Report
@@ -380,22 +384,22 @@
                                     </div>
                                     <div class="i-checks">
                                         <label>
-                                            <input type="radio" value="KabulVeCezalar" name="a"> <i></i> Kabul ve Cezalar
+                                            <input type="radio" value="depaDepuReport" name="a"> <i></i> DEPA / DEPU Report
                                         </label>
                                     </div>
                                     <div class="i-checks">
                                         <label>
-                                            <input type="radio" value="ZoneAnons" name="a"> <i></i> Zone Anons
+                                            <input type="radio" value="ahlReport" name="a"> <i></i> AHL Report
                                         </label>
                                     </div>
                                     <div class="i-checks">
                                         <label>
-                                            <input type="radio" value="VipKarsilama" name="a"> <i></i> VIP Karsilama
+                                            <input type="radio" value="drpReport" name="a"> <i></i> DRP Report
                                         </label>
                                     </div>
                                     <div class="i-checks">
                                         <label>
-                                            <input type="radio" value="DbVol" name="a"> <i></i> DBVOL
+                                            <input type="radio" value="spmlReport" name="a"> <i></i> SPML Report
                                         </label>
                                     </div>
                                     <!-- <div class="i-checks">
@@ -413,7 +417,20 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="float-e-margins">
-                                            <h4 class="text-navy">Complete Report</h4>
+                                            <h4 class="text-navy">Complete Report Criterias</h4>
+                                            <hr/>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox" id="formwchReport">
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="float-e-margins">
+                                            <h4 class="text-navy">WCH Report Criterias</h4>
                                             <hr/>
 
                                         </div>
@@ -426,22 +443,21 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="float-e-margins">
-                                            <h4 class="text-navy">Inad Report</h4>
+                                            <h4 class="text-navy">Inad Report Criterias</h4>
                                             <hr/>
-
-
 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="ibox" id="formKabulVeCezalar">
+
+                        <div class="ibox" id="formdepaDepuReport">
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="float-e-margins">
-                                            <h4 class="text-navy">Kabul ve Cezalar</h4>
+                                            <h4 class="text-navy">DEPA / DEPU Report Criterias</h4>
                                             <hr/>
 
                                         </div>
@@ -449,12 +465,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ibox" id="formZoneAnons">
+                        <div class="ibox" id="formahlReport">
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="float-e-margins">
-                                            <h4 class="text-navy">Zone Anons</h4>
+                                            <h4 class="text-navy">AHL Report Criterias</h4>
                                             <hr/>
 
                                         </div>
@@ -462,43 +478,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ibox" id="formVipKarsilama">
+                        <div class="ibox" id="formdrpReport">
                             <div class="ibox-content">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="float-e-margins">
-                                            <h4 class="text-navy">VIP Karsilama</h4>
-                                            <hr/>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ibox" id="formDbVol">
-                            <div class="ibox-content">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="float-e-margins">
-                                            <h4 class="text-navy">DBVOL</h4>
+                                            <h4 class="text-navy">DRP Report Criterias</h4>
                                             <hr/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="ibox" id="formImzasizPasaport">
-              <div class="ibox-content">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="float-e-margins">
-                      <h4 class="text-navy">Imzasiz Pasaport</h4>
-                      <hr/>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+                        <div class="ibox" id="formspmlReport">
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="float-e-margins">
+                                            <h4 class="text-navy">SPML Report Criterias</h4>
+                                            <hr/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -285,7 +285,7 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
                             </a>
                             <ul class="dropdown-menu dropdown-alerts">
                                 <li>
@@ -355,6 +355,101 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                      <h5>Total Values</h5>
+                      <div class="ibox-tools">
+                        <a class="collapse-link">
+                                              <i class="fa fa-chevron-down"></i>
+                                          </a>
+                      </div>
+                    </div>
+                    <div class="ibox-content totalValues">
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-user fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalPax"></h2> <span>Pax</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-suitcase fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalPcsBaggage"></h2> <span>Pcs Baggage</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-balance-scale fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalKgsBaggage"></h2> <span>Kgs Baggage</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-suitcase fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalPcsCargo"></h2> <span>Pcs Cargo</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-balance-scale fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalKgsCargo"></h2> <span>Kgs Cargo</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                              <div class="col-xs-3">
+                                <i class="fa fa-clock-o fa-3x"></i>
+                              </div>
+                              <div class="col-xs-9 text-right">
+                                <h2 class="font-bold" id="totalDelaysInMin"></h2> <span>Delay (in Mins)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ibox float-e-margins">
@@ -420,16 +515,20 @@
 
                                     </div>
 
+                                    <div class="col-lg-2">
+
+                                    </div>
+
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Male Pax</label>
-                                            <input type="number" placeholder="Male Pax" class="form-control">
+                                            <input type="number" placeholder="Male Pax" class="form-control" id="malePax">
                                         </div>
                                     </div>
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Female Pax</label>
-                                            <input type="number" placeholder="Female Pax" class="form-control">
+                                            <input type="number" placeholder="Female Pax" class="form-control" id="femalePax">
                                         </div>
                                     </div>
                                     <div class="col-lg-1">
@@ -441,15 +540,15 @@
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>INF</label>
-                                            <input type="number" placeholder="INF" class="form-control">
+                                            <input type="number" placeholder="INF" class="form-control" id="inf">
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <!-- <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Total Pax</label>
                                             <input type="number" placeholder="Total Pax" class="form-control" disabled="true">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <hr>
@@ -458,28 +557,28 @@
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Baggage Pcs</label>
-                                            <input type="number" placeholder="Baggage Pcs" class="form-control">
+                                            <input type="number" placeholder="Baggage Pcs" class="form-control" id="baggagePcs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Baggage Kgs</label>
-                                            <input type="number" placeholder="Baggage Kgs" class="form-control">
+                                            <input type="number" placeholder="Baggage Kgs" class="form-control" id="baggageKgs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Rush Bag Pcs</label>
-                                            <input type="number" placeholder="Rush Bag Pcs" class="form-control">
+                                            <input type="number" placeholder="Rush Bag Pcs" class="form-control" id="rushBaggagePcs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Rush Bag Kgs</label>
-                                            <input type="number" placeholder="Rush Bag Kgs" class="form-control">
+                                            <input type="number" placeholder="Rush Bag Kgs" class="form-control" id="rushBaggageKgs">
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <!-- <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Total Pcs</label>
                                             <input type="number" placeholder="Total Pcs" class="form-control" disabled="true">
@@ -490,7 +589,7 @@
                                             <label>Total Kgs</label>
                                             <input type="number" placeholder="Total Kgs" class="form-control" disabled="true">
                                         </div>
-                                    </div>
+                                    </div> -->
 
 
                                 </div>
@@ -499,28 +598,28 @@
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Cargo Pcs</label>
-                                            <input type="number" placeholder="Cargo Pcs" class="form-control">
+                                            <input type="number" placeholder="Cargo Pcs" class="form-control" id="cargoPcs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Cargo Kgs</label>
-                                            <input type="number" placeholder="Cargo Kgs" class="form-control">
+                                            <input type="number" placeholder="Cargo Kgs" class="form-control" id="cargoKgs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>DGR Cargo Pcs</label>
-                                            <input type="number" placeholder="DGR Cargo Pcs" class="form-control">
+                                            <input type="number" placeholder="DGR Cargo Pcs" class="form-control" id="dgrCargoPcs">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>DGR Cargo Kgs</label>
-                                            <input type="number" placeholder="DGR Cargo Kgs" class="form-control">
+                                            <input type="number" placeholder="DGR Cargo Kgs" class="form-control" id="dgrCargoKgs">
                                         </div>
                                     </div>
-                                    <div class="col-lg-2">
+                                    <!-- <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Cargo Total Pcs</label>
                                             <input type="number" placeholder="Total Pcs" class="form-control" disabled="true">
@@ -531,7 +630,7 @@
                                             <label>Cargo Total Kgs</label>
                                             <input type="number" placeholder="Total Kgs" class="form-control" disabled="true">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <hr>
@@ -557,7 +656,7 @@
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Duration 1</label>
-                                            <input type="number" placeholder="Duration 1" class="form-control">
+                                            <input type="number" placeholder="Duration 1" class="form-control" id="duration1">
                                         </div>
                                     </div>
                                     <div class="col-lg-1">
@@ -580,7 +679,7 @@
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Duration 2</label>
-                                            <input type="number" placeholder="Duration 1" class="form-control">
+                                            <input type="number" placeholder="Duration 2" class="form-control" id="duration2">
                                         </div>
                                     </div>
                                     <div class="col-lg-1">
@@ -603,7 +702,7 @@
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Duration 3</label>
-                                            <input type="number" placeholder="Duration 1" class="form-control">
+                                            <input type="number" placeholder="Duration 3" class="form-control" id="duration3">
                                         </div>
                                     </div>
                                     <div class="col-lg-1">
@@ -626,7 +725,7 @@
                                     <div class="col-lg-1">
                                         <div class="form-group myRequiredField">
                                             <label>Duration 4</label>
-                                            <input type="number" placeholder="Duration 1" class="form-control">
+                                            <input type="number" placeholder="Duration 4" class="form-control" id="duration4">
                                         </div>
                                     </div>
                                 </div>
@@ -2584,17 +2683,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
             <div class="footer">
               <div class="pull-right">
                 Ground Services &copy; <span class="currentYearSpan"></span>
@@ -2630,8 +2718,8 @@
             $('.clockpicker').clockpicker();
 
             $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green',
+                checkboxClass: 'icheckbox_square-red',
+                radioClass: 'iradio_square-red',
             });
 
             var hiddenButtons = $('button.hideAtTheBeginning').hide();
@@ -2794,6 +2882,146 @@
             $('.chosen-select', this).chosen('destroy').chosen();
         });
     </script>
+
+    <script>
+    var totalValuesSection = $('.totalValues').slideUp();
+
+      var totalPaxContainer = $('#totalPax');
+      var totalPcsBaggageContainer = $('#totalPcsBaggage');
+      var totalKgsBaggageContainer = $('#totalKgsBaggage');
+      var totalPcsCargoContainer = $('#totalPcsCargo');
+      var totalKgsCargoContainer = $('#totalKgsCargo');
+      var totalDelayContainer = $('#totalDelaysInMin');
+
+
+      var malePax = $('#malePax');
+      var femalePax = $('#femalePax');
+      var inf = $('#inf');
+
+      function sumUpPax() {
+        if ($.isNumeric(malePax.val()) && $.isNumeric(femalePax.val()) && $.isNumeric(inf.val())) {
+          totalValue = parseInt(malePax.val()) + parseInt(femalePax.val()) + parseInt(inf.val());
+          totalValuesSection.slideDown();
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      malePax.on('change', function() {
+        totalPaxContainer.text(sumUpPax());
+      });
+      femalePax.on('change', function() {
+        totalPaxContainer.text(sumUpPax());
+      });
+      inf.on('change', function() {
+        totalPaxContainer.text(sumUpPax());
+      });
+
+
+      var baggagePcs = $('#baggagePcs');
+      var baggageKgs = $('#baggageKgs');
+      var rushBaggagePcs = $('#rushBaggagePcs');
+      var rushBaggageKgs = $('#rushBaggageKgs');
+
+      function sumUpBaggagePcs(){
+        if ($.isNumeric(baggagePcs.val()) && $.isNumeric(rushBaggagePcs.val())) {
+          totalValue = parseInt(baggagePcs.val()) +  parseInt(rushBaggagePcs.val());
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      function sumUpBaggageKgs(){
+        if ($.isNumeric(baggageKgs.val()) &&  $.isNumeric(rushBaggageKgs.val()) ) {
+          totalValue = parseInt(baggageKgs.val()) + parseInt(rushBaggageKgs.val());
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      baggagePcs.on('change', function(){
+        totalPcsBaggageContainer.text(sumUpBaggagePcs());
+      });
+      rushBaggagePcs.on('change', function(){
+        totalPcsBaggageContainer.text(sumUpBaggagePcs());
+      });
+      baggageKgs.on('change', function(){
+        totalKgsBaggageContainer.text(sumUpBaggageKgs());
+      });
+      rushBaggageKgs.on('change', function(){
+        totalKgsBaggageContainer.text(sumUpBaggageKgs());
+      });
+
+
+      var cargoPcs = $('#cargoPcs');
+      var cargoKgs = $('#cargoKgs');
+      var dgrCargoPcs = $('#dgrCargoPcs');
+      var dgrCargoKgs = $('#dgrCargoKgs');
+
+      function sumUpCargoPcs(){
+        if ($.isNumeric(cargoPcs.val()) && $.isNumeric(dgrCargoPcs.val())) {
+          totalValue = parseInt(cargoPcs.val()) +  parseInt(dgrCargoPcs.val());
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      function sumUpCargoKgs(){
+        if ($.isNumeric(cargoKgs.val()) &&  $.isNumeric(dgrCargoKgs.val()) ) {
+          totalValue = parseInt(cargoKgs.val()) + parseInt(dgrCargoKgs.val());
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      cargoPcs.on('change', function(){
+        totalPcsCargoContainer.text(sumUpCargoPcs());
+      });
+      dgrCargoPcs.on('change', function(){
+        totalPcsCargoContainer.text(sumUpCargoPcs());
+      });
+      cargoKgs.on('change', function(){
+        totalKgsCargoContainer.text(sumUpCargoKgs());
+      });
+      dgrCargoKgs.on('change', function(){
+        totalKgsCargoContainer.text(sumUpCargoKgs());
+      });
+
+
+
+      var duration1 = $('#duration1');
+      var duration2 = $('#duration2');
+      var duration3 = $('#duration3');
+      var duration4 = $('#duration4');
+
+      function sumUpDelayDurations(){
+        if ($.isNumeric(duration1.val()) && $.isNumeric(duration2.val()) && $.isNumeric(duration3.val()) && $.isNumeric(duration4.val())) {
+          totalValue = parseInt(duration1.val()) +  parseInt(duration2.val()) + parseInt(duration3.val()) + parseInt(duration4.val());
+          return totalValue;
+        }else {
+          return "!";
+        }
+      }
+
+      duration1.on('change', function(){
+        totalDelayContainer.text(sumUpDelayDurations());
+      });
+      duration2.on('change', function(){
+        totalDelayContainer.text(sumUpDelayDurations());
+      });
+      duration3.on('change', function(){
+        totalDelayContainer.text(sumUpDelayDurations());
+      });
+      duration4.on('change', function(){
+        totalDelayContainer.text(sumUpDelayDurations());
+      });
+    </script>
+
     <style>
         body.DTTT_Print {
             background: #fff;

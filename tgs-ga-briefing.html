@@ -12,372 +12,412 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TGS | GHM Supervisor Report - Briefing</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
-    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGS | GHM Supervisor Report - Briefing</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+  <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+  <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
 
-    <!-- Sweet Alert -->
-    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+  <!-- Sweet Alert -->
+  <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 </head>
 
 <body class="md-skin">
-    <div id="wrapper">
-      <div class="loadingAircraft">
-        <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
-      </div>
-        <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li class="nav-header">
-                        <div class="dropdown profile-element">
-                            <span>
+  <div id="wrapper">
+    <div class="loadingAircraft">
+      <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
+    </div>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <span>
                                 <img alt="image" class="img-circle" src="img/profile_small.jpg" style="border-radius:15%" />
                             </span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                     <span class="block m-t-xs">
                                         <strong class="font-bold">Dogan Doganay</strong>
                                     </span> <span class="text-muted text-xs block">DD025569 <b class="caret"></b></span>
                                 </span>
                             </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href=".html">Profil Bilgileri</a></li>
-                                <li><a href=".html">Iletisim Bilgileri</a></li>
-                                <li><a href=".html">Mail Kutusu</a></li>
-                                <li class="divider"></li>
-                                <li><a href="tgs-login.html">Oturumu Kapat</a></li>
-                            </ul>
-                        </div>
-                        <div class="logo-element">
-                            TGS
-                        </div>
-                    </li>
-                    <li>
-                        <a href="tgs-main.html"><i class="fa fa-th-large"></i> <span class="nav-label">DASHBOARD</span> </a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-paper-plane"></i> <span class="nav-label">UCUSLAR</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-incoming-flights.html">Gelen Ucuslar</a></li>
-                            <li><a href="tgs-outgoing-flights.html">Giden Ucuslar</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-suitcase"></i> <span class="nav-label">KARGO</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-flight-reporting.html">Ucus Raporlama</a></li>
-                            <li><a href="tgs-offload-reporting.html">Offload Raporlama</a></li>
-                            <li><a href="tgs-stuff-reporting.html">Personel Raporlama</a></li>
-                            <li><a href="tgs-award-penalty.html">Odul ve Ceza</a></li>
-                            <li><a href="tgs-uld-reporting.html">ULD Raporlama</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-book"></i> <span class="nav-label">VPK </span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-vpk.html">VPK Raporlama</a></li>
-                            <li><a href="tgs-illegal-document.html">Sahte Dokuman Ekle</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="widgets.html"><i class="fa fa-exclamation-triangle"></i> <span class="nav-label">INAD</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-search-inad.html">Inad Yolcu Ara</a></li>
-                            <li><a href="tgs-add-inad.html">Inad Yolcu Ekle</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
-                            <li><a href="tgs-ga-reporting.html">Reporting</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a href=".html">Profil Bilgileri</a></li>
+                <li><a href=".html">Iletisim Bilgileri</a></li>
+                <li><a href=".html">Mail Kutusu</a></li>
+                <li class="divider"></li>
+                <li><a href="tgs-login.html">Oturumu Kapat</a></li>
+              </ul>
+            </div>
+            <div class="logo-element">
+              TGS
+            </div>
+          </li>
+          <li>
+            <a href="tgs-main.html"><i class="fa fa-th-large"></i> <span class="nav-label">DASHBOARD</span> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-paper-plane"></i> <span class="nav-label">UCUSLAR</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-incoming-flights.html">Gelen Ucuslar</a></li>
+              <li><a href="tgs-outgoing-flights.html">Giden Ucuslar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-suitcase"></i> <span class="nav-label">KARGO</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-flight-reporting.html">Ucus Raporlama</a></li>
+              <li><a href="tgs-offload-reporting.html">Offload Raporlama</a></li>
+              <li><a href="tgs-stuff-reporting.html">Personel Raporlama</a></li>
+              <li><a href="tgs-award-penalty.html">Odul ve Ceza</a></li>
+              <li><a href="tgs-uld-reporting.html">ULD Raporlama</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-book"></i> <span class="nav-label">VPK </span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-vpk.html">VPK Raporlama</a></li>
+              <li><a href="tgs-illegal-document.html">Sahte Dokuman Ekle</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="widgets.html"><i class="fa fa-exclamation-triangle"></i> <span class="nav-label">INAD</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-search-inad.html">Inad Yolcu Ara</a></li>
+              <li><a href="tgs-add-inad.html">Inad Yolcu Ekle</a></li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
+              <li><a href="tgs-ga-reporting.html">Reporting</a></li>
+            </ul>
+          </li>
+          <!-- <li>
                         <a href="widgets.html"><i class="fa fa-wheelchair"></i> <span class="nav-label">GH WCH</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="tgs-ga-wch.html">WCH Yolcu Ekle</a></li>
                             <li><a href="tgs-ga-wch-reporting.html">WCH Raporlama</a></li>
                         </ul>
                     </li> -->
-                    <!-- <li>
+          <!-- <li>
                         <a href="widgets.html"><i class="fa fa-user-times"></i> <span class="nav-label">GH INAD</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="tgs-ga-inad.html">Inad Yolcu Ekle</a></li>
                         </ul>
                     </li> -->
-                    <li>
-                        <a href="#"><i class="fa fa-user"></i> <span class="nav-label">LCV - OFFLOAD</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-offload-passenger-add.html">Offload Yolcu Ekleme</a></li>
-                            <li><a href="tgs-lcv-add-passenger.html">LCV Yolcu Ekleme</a></li>
-                            <li><a href="tgs-lcv-offload-report.html">Raporlama</a></li>
-                            <li><a href="tgs-lcv-offload-comparision.html">(Lcv-Offload) Karsilastirma</a></li>
-                            <li><a href="tgs-lcv-offload-staff-performance.html">Personel Performans</a></li>
-                            <li><a href="tgs-lcv-offload-add-staff.html">Personel Ekle</a></li>
-                            <li><a href="tgs-lcv-offload-edit-staff.html">Personel Duzenle</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">CIHAZ TAKIP</span>  <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-device-management.html"> Cihaz Islemleri</a></li>
-                            <li><a href="tgs-all-devices.html">Tum Cihazlar</a></li>
-                            <li><a href="tgs-device-add.html">Cihaz Ekle</a></li>
-                            <li><a href="tgs-device-history.html">Cihaz Gecmis Kaydi</a></li>
-                            <li><a href="tgs-send-to-service.html">Servise Gonderme Formu</a></li>
-                            <li><a href="tgs-get-back-from-service.html">Servisten Teslim Alma Formu</a></li>
-                            <li><a href="tgs-service-history.html">Servis Gecmis Kaydi</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-envelope-square"></i> <span class="nav-label">CO-MAIL</span>  <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-co-mail-dashboard.html">Co-Mail Dashboard</a></li>
-                            <li><a href="tgs-incoming-mail.html">Gelen Gonderi</a></li>
-                            <li><a href="tgs-outgoing-mail.html">Giden Gonderi</a></li>
-                            <li><a href="tgs-outgoing-mail.html">Ulke Giris Fisleri</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">ORTM </span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-crash-record-form.html">Kaza Tespit Formu</a></li>
-                            <li><a href="tgs-ortm-stuff-monitoring.html">Personel Takip</a></li>
-                            <li><a href="tgs-safa-ramp-checklist.html">SAFA/Ramp Emniyet Checklisti</a></li>
-                            <li><a href="tgs-industrial-accident.html">Is Kazasi</a></li>
-                            <li><a href="tgs-last-second-call.html">Ramak Kala</a></li>
-                            <li><a href="tgs-rule-violation.html">Kural Ihlal</a></li>
-                            <li>
-                                <a href="tgs-ortm-reports.html">Raporlamalar</a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="ortm-recorded-reports.html">Kayitli Raporlar</a></li>
-                                    <li><a href="ortm-new-report.html">Yeni Rapor Olustur</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">PROJE & RAPORLAMA</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-performance-values.html">Performans Degerleri</a></li>
-                            <li><a href="tgs-number-of-passengers.html">Yolcu Sayilari</a></li>
-                            <li><a href="tgs-number-of-flights.html">Sefer Sayilari</a></li>
-                            <li><a href="tgs-delay-analysis.html">Tehir Analizi</a></li>
-                            <li><a href="tgs-operation-values.html">Operasyon Verileri</a></li>
-                            <li><a href="tgs-luggage-values.html">Bagaj Verileri</a></li>
-                            <li><a href="tgs-flight-irregularities.html">Ucus Aksakliklari</a></li>
-                            <li><a href="tgs-performance-affecting-factors.html">Performansi Etkileyen Faktorler</a></li>
-                            <li><a href="tgs-stuff-values.html">Personel Verileri</a></li>
-                            <li><a href="tgs-tool-values.html">Techizat Verileri</a></li>
-                            <li><a href="tgs-crash-values.html">Kaza Verileri</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">YHM</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-denied-boarding.html">Denied Boarding</a></li>
-                            <li><a href="tgs-visa-passport.html">Vize &amp; Pasaport</a></li>
-                            <li><a href="tgs-arrival.html">Arrival</a></li>
-                            <li><a href="tgs-pass-services-forms.html">YHM Kayit Formlari</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-code"></i> <span class="nav-label">Diğer</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="tgs-staff-performance.html">Personel Performans</a></li>
-                            <li><a href="tgs-runway-alteration.html">Pist Değişiklikleri</a></li>
-                            <li><a href="tgs-charts.html">Charts</a></li>
-                        </ul>
-                    </li>
+          <li>
+            <a href="#"><i class="fa fa-user"></i> <span class="nav-label">LCV - OFFLOAD</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-offload-passenger-add.html">Offload Yolcu Ekleme</a></li>
+              <li><a href="tgs-lcv-add-passenger.html">LCV Yolcu Ekleme</a></li>
+              <li><a href="tgs-lcv-offload-report.html">Raporlama</a></li>
+              <li><a href="tgs-lcv-offload-comparision.html">(Lcv-Offload) Karsilastirma</a></li>
+              <li><a href="tgs-lcv-offload-staff-performance.html">Personel Performans</a></li>
+              <li><a href="tgs-lcv-offload-add-staff.html">Personel Ekle</a></li>
+              <li><a href="tgs-lcv-offload-edit-staff.html">Personel Duzenle</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">CIHAZ TAKIP</span>  <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-device-management.html"> Cihaz Islemleri</a></li>
+              <li><a href="tgs-all-devices.html">Tum Cihazlar</a></li>
+              <li><a href="tgs-device-add.html">Cihaz Ekle</a></li>
+              <li><a href="tgs-device-history.html">Cihaz Gecmis Kaydi</a></li>
+              <li><a href="tgs-send-to-service.html">Servise Gonderme Formu</a></li>
+              <li><a href="tgs-get-back-from-service.html">Servisten Teslim Alma Formu</a></li>
+              <li><a href="tgs-service-history.html">Servis Gecmis Kaydi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-envelope-square"></i> <span class="nav-label">CO-MAIL</span>  <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-co-mail-dashboard.html">Co-Mail Dashboard</a></li>
+              <li><a href="tgs-incoming-mail.html">Gelen Gonderi</a></li>
+              <li><a href="tgs-outgoing-mail.html">Giden Gonderi</a></li>
+              <li><a href="tgs-outgoing-mail.html">Ulke Giris Fisleri</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">ORTM </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-crash-record-form.html">Kaza Tespit Formu</a></li>
+              <li><a href="tgs-ortm-stuff-monitoring.html">Personel Takip</a></li>
+              <li><a href="tgs-safa-ramp-checklist.html">SAFA/Ramp Emniyet Checklisti</a></li>
+              <li><a href="tgs-industrial-accident.html">Is Kazasi</a></li>
+              <li><a href="tgs-last-second-call.html">Ramak Kala</a></li>
+              <li><a href="tgs-rule-violation.html">Kural Ihlal</a></li>
+              <li>
+                <a href="tgs-ortm-reports.html">Raporlamalar</a>
+                <ul class="nav nav-second-level">
+                  <li><a href="ortm-recorded-reports.html">Kayitli Raporlar</a></li>
+                  <li><a href="ortm-new-report.html">Yeni Rapor Olustur</a></li>
                 </ul>
-            </div>
-        </nav>
-        <div id="page-wrapper" class="gray-bg">
-            <div class="row border-bottom">
-                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header">
-                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                        <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
-                            <div class="form-group">
-                                <input type="text" placeholder="Ara..." class="form-control" name="top-search" id="top-search">
-                            </div>
-                        </form>
-                    </div>
-                    <ul class="nav navbar-top-links navbar-right">
-                        <li>
-                            <span class="m-r-sm text-muted welcome-message">TGS Web Uygulamalari Ekrani</span>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">PROJE & RAPORLAMA</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-performance-values.html">Performans Degerleri</a></li>
+              <li><a href="tgs-number-of-passengers.html">Yolcu Sayilari</a></li>
+              <li><a href="tgs-number-of-flights.html">Sefer Sayilari</a></li>
+              <li><a href="tgs-delay-analysis.html">Tehir Analizi</a></li>
+              <li><a href="tgs-operation-values.html">Operasyon Verileri</a></li>
+              <li><a href="tgs-luggage-values.html">Bagaj Verileri</a></li>
+              <li><a href="tgs-flight-irregularities.html">Ucus Aksakliklari</a></li>
+              <li><a href="tgs-performance-affecting-factors.html">Performansi Etkileyen Faktorler</a></li>
+              <li><a href="tgs-stuff-values.html">Personel Verileri</a></li>
+              <li><a href="tgs-tool-values.html">Techizat Verileri</a></li>
+              <li><a href="tgs-crash-values.html">Kaza Verileri</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">YHM</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-denied-boarding.html">Denied Boarding</a></li>
+              <li><a href="tgs-visa-passport.html">Vize &amp; Pasaport</a></li>
+              <li><a href="tgs-arrival.html">Arrival</a></li>
+              <li><a href="tgs-pass-services-forms.html">YHM Kayit Formlari</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-code"></i> <span class="nav-label">Diğer</span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="tgs-staff-performance.html">Personel Performans</a></li>
+              <li><a href="tgs-runway-alteration.html">Pist Değişiklikleri</a></li>
+              <li><a href="tgs-charts.html">Charts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+      <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+              <div class="form-group">
+                <input type="text" placeholder="Ara..." class="form-control" name="top-search" id="top-search">
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-top-links navbar-right">
+            <li>
+              <span class="m-r-sm text-muted welcome-message">TGS Web Uygulamalari Ekrani</span>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                                 <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-messages">
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="" class="pull-left">
+              <ul class="dropdown-menu dropdown-messages">
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
                                             <img alt="image" class="img-circle" src="img/profile_small.jpg">
                                         </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">DD025569</small>
-                                            <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
-                                            <small class="text-muted">1 gun once 10.06.2014 - 07:58</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="" class="pull-left">
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">1 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
                                             <img alt="image" class="img-circle" src="img/profile_small.jpg">
                                         </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">DD025569</small>
-                                            <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
-                                            <small class="text-muted">2 gun once 10.06.2014 - 07:58</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="" class="pull-left">
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">2 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
                                             <img alt="image" class="img-circle" src="img/profile_small.jpg">
                                         </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">DD025569</small>
-                                            <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
-                                            <small class="text-muted">3 gun once 10.06.2014 - 07:58</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="" class="pull-left">
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">3 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="dropdown-messages-box">
+                    <a href="" class="pull-left">
                                             <img alt="image" class="img-circle" src="img/profile_small.jpg">
                                         </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">DD025569</small>
-                                            <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
-                                            <small class="text-muted">4 gun once 10.06.2014 - 07:58</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a href="#l">
+                    <div class="media-body">
+                      <small class="pull-right">DD025569</small>
+                      <strong>Dogan Doganay</strong>, <strong>Cihaz Takip</strong> uygulamasinda oturum acti. <br>
+                      <small class="text-muted">4 gun once 10.06.2014 - 07:58</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="#l">
                                             <i class="fa fa-envelope"></i> <strong>Tumunu Oku</strong>
                                         </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-alerts">
-                                <li>
-                                    <a href="">
-                                        <div>
-                                            <i class="fa fa-envelope fa-fw"></i> 16 Okunmamis Iletiniz Var
-                                            <span class="pull-right text-muted small">4 dakika once</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="">
-                                        <div>
-                                            <i class="fa fa-twitter fa-fw"></i> 3 Yeni Takipci
-                                            <span class="pull-right text-muted small">12 dakika once</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="">
-                                        <div>
-                                            <i class="fa fa-upload fa-fw"></i> Server Onarim Calismasi
-                                            <span class="pull-right text-muted small">54 Dakika Once</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a href="#l">
+              <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-envelope fa-fw"></i> 16 Okunmamis Iletiniz Var
+                      <span class="pull-right text-muted small">4 dakika once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-twitter fa-fw"></i> 3 Yeni Takipci
+                      <span class="pull-right text-muted small">12 dakika once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">
+                    <div>
+                      <i class="fa fa-upload fa-fw"></i> Server Onarim Calismasi
+                      <span class="pull-right text-muted small">54 Dakika Once</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="text-center link-block">
+                    <a href="#l">
                                             <strong>Tumunu Goruntule</strong>
                                             <i class="fa fa-angle-right"></i>
                                         </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                  </div>
+                </li>
+              </ul>
+            </li>
 
-                        <li>
-                            <a href="tgs-login.html">
+            <li>
+              <a href="tgs-login.html">
                                 <i class="fa fa-sign-out"></i> Oturumu Kapat
                             </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>Supervisor Report - Briefing</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Home Page</a>
-                        </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+          <h2>Supervisor Report - Briefing</h2>
+          <ol class="breadcrumb">
+            <li>
+              <a href="index.html">Home Page</a>
+            </li>
 
-                        <li>
-                            <a href="tgs-ga-main.html">GHM Supervisor Report</a>
-                        </li>
+            <li>
+              <a href="tgs-ga-main.html">GHM Supervisor Report</a>
+            </li>
 
-                        <li class="active">
-                            <strong>Briefing</strong>
-                        </li>
-                    </ol>
+            <li class="active">
+              <strong>Briefing</strong>
+            </li>
+          </ol>
+        </div>
+        <div class="col-lg-2">
+          <!-- <label class="label label-primary" style="font-size:1.3em; display:inline-block;margin-top:40px;">
+                    Total Pax: <span id="totalPax"> </span>
+                  </label> -->
+        </div>
+      </div>
+      <div class="wrapper wrapper-content animated fadeInRight">
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                <h5>Total Values</h5>
+                <div class="ibox-tools">
+                  <a class="collapse-link">
+                                        <i class="fa fa-chevron-down"></i>
+                                    </a>
                 </div>
-                <div class="col-lg-2">
-                </div>
-            </div>
-            <div class="wrapper wrapper-content animated fadeInRight">
-
-
-
-
-
+              </div>
+              <div class="ibox-content totalValues">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>BRIEFING</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
+                  <!-- <div class="col-lg-2">
+                    <label class="label label-primary" style="font-size:1.3em; display:inline-block;">
+                              Total Pax: <span id="totalPax"> </span>
+                            </label>
+                  </div> -->
+                  <div class="col-lg-2">
+                    <div class="widget style1 navy-bg">
+                      <div class="row vertical-align">
+                        <div class="col-xs-3">
+                          <i class="fa fa-user fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                          <h2 class="font-bold" id="totalPax"></h2> <span>pax</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                <h5>BRIEFING</h5>
+                <div class="ibox-tools">
+                  <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Briefing Location</label>
-                                            <div class="input-group" style="width:100%">
-                                                <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                </div>
+              </div>
+              <div class="ibox-content">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Briefing Location</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
                                                     <option value="">Select</option>
                                                     <option value="">Counter</option>
                                                     <option value="">General Aviation Office</option>
@@ -385,43 +425,44 @@
                                                     <option value="">Representative Office</option>
                                                     <option value="">...</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <label>Briefing Time</label>
-                                        <div class="input-group clockpicker" data-autoclose="true">
-                                            <input type="text" class="form-control" value="00:00">
-                                            <span class="input-group-addon">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <label>Briefing Time</label>
+                    <div class="input-group clockpicker" data-autoclose="true">
+                      <input type="text" class="form-control" value="00:00">
+                      <span class="input-group-addon">
                                                 <span class="fa fa-clock-o"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <label>Check In Time</label>
-                                        <div class="input-group clockpicker" data-autoclose="true">
-                                            <input type="text" class="form-control" value="00:00">
-                                            <span class="input-group-addon">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <label>Check In Time</label>
+                    <div class="input-group clockpicker" data-autoclose="true">
+                      <input type="text" class="form-control" value="00:00">
+                      <span class="input-group-addon">
                                                 <span class="fa fa-clock-o"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <label>Boarding Time</label>
-                                        <div class="input-group clockpicker" data-autoclose="true">
-                                            <input type="text" class="form-control" value="00:00">
-                                            <span class="input-group-addon">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <label>Boarding Time</label>
+                    <div class="input-group clockpicker" data-autoclose="true">
+                      <input type="text" class="form-control" value="00:00">
+                      <span class="input-group-addon">
                                                 <span class="fa fa-clock-o"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Park Position</label>
-                                            <div class="input-group" style="width:100%">
-                                                <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Park Position</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
                                                     <option value="">Select</option>
                                                     <option value="">V02</option>
                                                     <option value="">R04</option>
@@ -429,14 +470,14 @@
                                                     <option value="">S06</option>
                                                     <option value="">...</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Last Park Position</label>
-                                            <div class="input-group" style="width:100%">
-                                                <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Last Park Position</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
                                                     <option value="">Select</option>
                                                     <option value="">V02</option>
                                                     <option value="">R04</option>
@@ -444,14 +485,14 @@
                                                     <option value="">S06</option>
                                                     <option value="">...</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Gate</label>
-                                            <div class="input-group" style="width:100%">
-                                                <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Gate</label>
+                      <div class="input-group" style="width:100%">
+                        <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
                                                     <option value="">Select</option>
                                                     <option value="">V02</option>
                                                     <option value="">R04</option>
@@ -459,179 +500,180 @@
                                                     <option value="">S06</option>
                                                     <option value="">...</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Conf. C/CL</label>
-                                            <input type="number" min="0" placeholder="Conf. C/CL" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Conf. Y/CL</label>
-                                            <input type="number" min="0" placeholder="Conf. Y/CL" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Estimated Pax Dep (C/CL)</label>
-                                            <input type="number" min="0" placeholder="Estimated Pax Dep (C/CL)" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>Estimated Pax Dep (Y/CL)</label>
-                                            <input type="number" min="0" placeholder="Estimated Pax Dep (Y/CL)" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>INF</label>
-                                            <input type="number" min="0" placeholder="INF" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Conf. C/CL</label>
+                      <input type="number" min="0" placeholder="Conf. C/CL" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Conf. Y/CL</label>
+                      <input type="number" min="0" placeholder="Conf. Y/CL" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Estimated Pax Dep (C/CL)</label>
+                      <input type="number" min="0" placeholder="Estimated Pax Dep (C/CL)" class="form-control" id="estimatedPaxC">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>Estimated Pax Dep (Y/CL)</label>
+                      <input type="number" min="0" placeholder="Estimated Pax Dep (Y/CL)" class="form-control" id="estimatedPaxY">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>INF</label>
+                      <input type="number" min="0" placeholder="INF" class="form-control" id="inf">
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-2">
                                         <div class="form-group myRequiredField">
                                             <label>Total Pax</label>
                                             <input type="number" placeholder="Total Pax" class="form-control" disabled="true">
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> -->
+                </div>
 
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>AVIH</label>
-                                            <input type="number" min="0" placeholder="AVIH" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>PET</label>
-                                            <input type="number" min="0" placeholder="PET" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>CHD</label>
-                                            <input type="number" min="0" placeholder="CHD" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>PAD</label>
-                                            <input type="number" min="0" placeholder="PAD" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>U/G</label>
-                                            <input type="number" min="0" placeholder="U/G" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group myRequiredField">
-                                            <label>WCH</label>
-                                            <input type="number" min="0" placeholder="WCH" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>AVIH</label>
+                      <input type="number" min="0" placeholder="AVIH" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>PET</label>
+                      <input type="number" min="0" placeholder="PET" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>CHD</label>
+                      <input type="number" min="0" placeholder="CHD" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>PAD</label>
+                      <input type="number" min="0" placeholder="PAD" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>U/G</label>
+                      <input type="number" min="0" placeholder="U/G" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group myRequiredField">
+                      <label>WCH</label>
+                      <input type="number" min="0" placeholder="WCH" class="form-control">
+                    </div>
+                  </div>
+                </div>
 
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <button class="btn btn-primary btn-block save" style="margin-top:23px;">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <button class="btn btn-primary btn-block save" style="margin-top:23px;">
                                             <i class="fa fa-save" style="font-size:1.3em;"></i> &nbsp; Save
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
-            <div class="modal inmodal" id="wchModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content animated slideInDown">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">
+      <div class="modal inmodal" id="wchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content animated slideInDown">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
                                 <span aria-hidden="true">&times;</span>
                                 <span class="sr-only">Kapat</span>
                             </button>
-                            <h2 class="modal-title">
+              <h2 class="modal-title">
                                 WCH Record Form
                             </h2>
-                            <div class="row">
-                                <hr style="margin-bottom:30px;" />
-                                <div class="col-lg-4 border-right">
-                                    <!-- <span class="text-muted" style="font-size: 1.2em;"> QESHM AIR</span> -->
-                                    <span class="label label-primary" style="font-size:1.4em;"> QESHM AIR</span>
-                                </div>
-                                <div class="col-lg-4 border-right">
-                                    <!-- <span class="text-muted" style="font-size: 1.2em;"> QB2214</span> -->
-                                    <span class="label label-primary" style="font-size:1.4em;"> QB2214</span>
-                                </div>
-                                <div class="col-lg-4">
-                                    <!-- <span class="text-muted" style="font-size: 1.2em;"> EPJQK</span> -->
-                                    <span class="label label-primary" style="font-size:1.4em;"> EPJQK</span>
-                                </div>
-                            </div>
-                        </div>
+              <div class="row">
+                <hr style="margin-bottom:30px;" />
+                <div class="col-lg-4 border-right">
+                  <!-- <span class="text-muted" style="font-size: 1.2em;"> QESHM AIR</span> -->
+                  <span class="label label-primary" style="font-size:1.4em;"> QESHM AIR</span>
+                </div>
+                <div class="col-lg-4 border-right">
+                  <!-- <span class="text-muted" style="font-size: 1.2em;"> QB2214</span> -->
+                  <span class="label label-primary" style="font-size:1.4em;"> QB2214</span>
+                </div>
+                <div class="col-lg-4">
+                  <!-- <span class="text-muted" style="font-size: 1.2em;"> EPJQK</span> -->
+                  <span class="label label-primary" style="font-size:1.4em;"> EPJQK</span>
+                </div>
+              </div>
+            </div>
 
-                        <div class="modal-body" style="">
-                            <div class="panel-body">
-                                <div class="panel-group" id="accordion">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h5 class="panel-title">
+            <div class="modal-body" style="">
+              <div class="panel-body">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerOne">Passanger #1</a>
                                            </h5>
-                                        </div>
-                                        <div id="passangerOne" class="panel-collapse collapse in">
-                                            <div class="panel-body">
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group myRequiredField">
-                                                            <label>Name</label>
-                                                            <input type="text" placeholder="Name" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group myRequiredField">
-                                                            <label>Surname</label>
-                                                            <input type="text" placeholder="Surname" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group myRequiredField" id="data_1">
-                                                            <label>Date of Birth</label>
-                                                            <div class="input-group date">
-                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="" placeholder="  /  /    " data-provide="datepicker">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                    </div>
+                    <div id="passangerOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="form-group myRequiredField">
+                              <label>Name</label>
+                              <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group myRequiredField">
+                              <label>Surname</label>
+                              <input type="text" placeholder="Surname" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group myRequiredField" id="data_1">
+                              <label>Date of Birth</label>
+                              <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="" placeholder="  /  /    " data-provide="datepicker">
+                              </div>
+                            </div>
+                          </div>
 
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group myRequiredField">
-                                                            <label>Seat Number</label>
-                                                            <input type="text" placeholder="Seat Number" class="form-control" maxlength="3">
-                                                        </div>
-                                                    </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="form-group myRequiredField">
+                              <label>Seat Number</label>
+                              <input type="text" placeholder="Seat Number" class="form-control" maxlength="3">
+                            </div>
+                          </div>
 
-                                                    <div class="col-lg-4">
-                                                        <div class="form-group myRequiredField">
-                                                            <label>WCH Type</label>
-                                                            <div class="input-group" style="width:100%">
-                                                                <select data-placeholder="" class="chosen-select" style="width:inherit;">
+                          <div class="col-lg-4">
+                            <div class="form-group myRequiredField">
+                              <label>WCH Type</label>
+                              <div class="input-group" style="width:100%">
+                                <select data-placeholder="" class="chosen-select" style="width:inherit;">
                                                                     <option value="">Select</option>
                                                                     <option value="WCHC">WCHC (Cabin)</option>
                                                                     <option value="WCHR">WCHR (Ramp)</option>
@@ -642,220 +684,252 @@
                                                                     <option value="STRC">Strecher</option>
                                                                     <option value="other">Diger</option>
                                                                 </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row" id="wheelchairPsTextarea">
-                                                    <div class="col-lg-12">
-                                                        <div class="form-group myRequiredField">
-                                                            <label>PS</label>
-                                                            <textarea placeholder="" rows="6" style="width:100%"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="input-group">
-                                                            <label for="">Owner of WCH</label>
-                                                            <div class="i-checks" style="margin-top:6px;">
-                                                                <label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" id="wheelchairPsTextarea">
+                          <div class="col-lg-12">
+                            <div class="form-group myRequiredField">
+                              <label>PS</label>
+                              <textarea placeholder="" rows="6" style="width:100%"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="input-group">
+                              <label for="">Owner of WCH</label>
+                              <div class="i-checks" style="margin-top:6px;">
+                                <label>
                                                                     <input type="radio" name="owner" value="" checked="">
                                                                     <i></i> Handling Company
                                                                 </label>
-                                                                <label style="margin-left:10px;">
+                                <label style="margin-left:10px;">
                                                                     <input type="radio" name="owner" value="">
                                                                     <i></i> Passanger
                                                                 </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <label for="">Has a Sticker?</label>
-                                                            <div class="i-checks" style="margin-top:6px;">
-                                                                <label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="input-group">
+                              <label for="">Has a Sticker?</label>
+                              <div class="i-checks" style="margin-top:6px;">
+                                <label>
                                                                     <input type="checkbox" value="" checked="">
                                                                     <i></i> Yes
                                                                 </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="input-group">
-                                                            <label for="">Has a Message?</label>
-                                                            <div class="i-checks" style="margin-top:6px;">
-                                                                <label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="input-group">
+                              <label for="">Has a Message?</label>
+                              <div class="i-checks" style="margin-top:6px;">
+                                <label>
                                                                     <input type="checkbox" value="" checked="">
                                                                     <i></i> Yes
                                                                 </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerTwo">Passanger #2</a>
                                            </h4>
-                                        </div>
-                                        <div id="passangerTwo" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                All other instances will be created like first collapsing item.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
+                    </div>
+                    <div id="passangerTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        All other instances will be created like first collapsing item.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerThree">Passanger #3</a>
                                            </h4>
-                                        </div>
-                                        <div id="passangerThree" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                All other instances will be created like first collapsing item.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-lg-2 ">
-                                    <button class="btn btn-primary btn-block save"> <i class="fa fa-save"></i> &nbsp; Save </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
-                        </div>
                     </div>
+                    <div id="passangerThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        All other instances will be created like first collapsing item.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
 
 
-
-            <div class="footer">
-              <div class="pull-right">
-                Ground Services &copy; <span class="currentYearSpan"></span>
+              <div class="row">
+                <div class="col-lg-2 ">
+                  <button class="btn btn-primary btn-block save"> <i class="fa fa-save"></i> &nbsp; Save </button>
+                </div>
               </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="js/plugins/jeditable/jquery.jeditable.js"></script>
-    <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
-    <!-- Data picker -->
-    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
-    <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
-    <!-- Sweet alert -->
-    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
-    <!-- Clock picker -->
-    <script src="js/plugins/clockpicker/clockpicker.js"></script>
-    <!-- Page-Level Scripts -->
-    <script>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <div class="pull-right">
+          Ground Services &copy; <span class="currentYearSpan"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="js/plugins/jeditable/jquery.jeditable.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+  <script src="js/plugins/pace/pace.min.js"></script>
+  <!-- Data picker -->
+  <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+  <!-- Chosen -->
+  <script src="js/plugins/chosen/chosen.jquery.js"></script>
+  <!-- iCheck -->
+  <script src="js/plugins/iCheck/icheck.min.js"></script>
+  <!-- Sweet alert -->
+  <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+  <!-- Clock picker -->
+  <script src="js/plugins/clockpicker/clockpicker.js"></script>
+  <!-- Page-Level Scripts -->
+  <script>
     printCurrentDate();
     removeLoader();
 
-        $(document).ready(function() {
-            $('.clockpicker').clockpicker();
+    $(document).ready(function() {
+      $('.clockpicker').clockpicker();
 
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green',
-            });
+      $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
+      });
 
-            var queryButton = $('button.save');
-            queryButton.on('click', function(virtzirt) {
-                swal({
-                    title: "Briefing info saved!",
-                    // text: "2 sn icinde kapanacak",
-                    type: "success",
-                    timer: 2000,
-                    showConfirmButton: false
-                },function(){
-                    window.location.replace('tgs-ga-main.html');
-                });
-                virtzirt.preventDefault();
-            })
-
-
+      var queryButton = $('button.save');
+      queryButton.on('click', function(virtzirt) {
+        swal({
+          title: "Briefing info saved!",
+          // text: "2 sn icinde kapanacak",
+          type: "success",
+          timer: 2000,
+          showConfirmButton: false
+        }, function() {
+          window.location.replace('tgs-ga-main.html');
         });
-        var config = {
-            '.chosen-select': {},
-            '.chosen-select-deselect': {
-                allow_single_deselect: true
-            },
-            '.chosen-select-no-single': {
-                disable_search_threshold: 10
-            },
-            '.chosen-select-no-results': {
-                no_results_text: 'Oops, nothing found!'
-            },
-            '.chosen-select-width': {
-                width: "95%"
-            }
-        }
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
-    </script>
-    <style>
-        body.DTTT_Print {
-            background: #fff;
-        }
+        virtzirt.preventDefault();
+      })
 
-        .DTTT_Print #page-wrapper {
-            margin: 0;
-            background: #fff;
-        }
 
-        button.DTTT_button,
-        div.DTTT_button,
-        a.DTTT_button {
-            border: 1px solid #e7eaec;
-            background: #fff;
-            color: #676a6c;
-            box-shadow: none;
-            padding: 6px 8px;
-        }
+    });
+    var config = {
+      '.chosen-select': {},
+      '.chosen-select-deselect': {
+        allow_single_deselect: true
+      },
+      '.chosen-select-no-single': {
+        disable_search_threshold: 10
+      },
+      '.chosen-select-no-results': {
+        no_results_text: 'Oops, nothing found!'
+      },
+      '.chosen-select-width': {
+        width: "95%"
+      }
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+  </script>
 
-        button.DTTT_button:hover,
-        div.DTTT_button:hover,
-        a.DTTT_button:hover {
-            border: 1px solid #d2d2d2;
-            background: #fff;
-            color: #676a6c;
-            box-shadow: none;
-            padding: 6px 8px;
-        }
+  <script>
+    var totalValuesSection = $('.totalValues').slideUp();
 
-        .dataTables_filter label {
-            margin-right: 5px;
-        }
-    </style>
 
-    <style media="screen">
-        div.datepicker {
-            z-index: 2060 !important;
-        }
-    </style>
+    var estimatedPaxC = $('#estimatedPaxC');
+    var estimatedPaxY = $('#estimatedPaxY');
+    var inf = $('#inf');
+    var total = $('#totalPax');
+    var totalValue;
+
+    function sumUpPax() {
+      if ($.isNumeric(estimatedPaxC.val()) && $.isNumeric(estimatedPaxY.val()) && $.isNumeric(inf.val())) {
+        totalValue = parseInt(estimatedPaxC.val()) + parseInt(estimatedPaxY.val()) + parseInt(inf.val());
+        totalValuesSection.slideDown();
+        return totalValue;
+      } else {
+        totalValuesSection.slideUp();
+      }
+    }
+
+    estimatedPaxC.on('change', function() {
+      total.text(sumUpPax());
+    });
+    estimatedPaxY.on('change', function() {
+      total.text(sumUpPax());
+    });
+    inf.on('change', function() {
+      total.text(sumUpPax());
+    });
+  </script>
+
+  <style>
+    body.DTTT_Print {
+      background: #fff;
+    }
+
+    .DTTT_Print #page-wrapper {
+      margin: 0;
+      background: #fff;
+    }
+
+    button.DTTT_button,
+    div.DTTT_button,
+    a.DTTT_button {
+      border: 1px solid #e7eaec;
+      background: #fff;
+      color: #676a6c;
+      box-shadow: none;
+      padding: 6px 8px;
+    }
+
+    button.DTTT_button:hover,
+    div.DTTT_button:hover,
+    a.DTTT_button:hover {
+      border: 1px solid #d2d2d2;
+      background: #fff;
+      color: #676a6c;
+      box-shadow: none;
+      padding: 6px 8px;
+    }
+
+    .dataTables_filter label {
+      margin-right: 5px;
+    }
+  </style>
+
+  <style media="screen">
+    div.datepicker {
+      z-index: 2060 !important;
+    }
+  </style>
 </body>
 
 </html>

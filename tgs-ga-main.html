@@ -295,7 +295,7 @@
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
                             </a>
               <ul class="dropdown-menu dropdown-alerts">
                 <li>
@@ -363,7 +363,7 @@
       </div>
 
       <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="ibox-content m-b-sm border-bottom">
+        <div class="ibox-content m-b-sm border-bottom" style="padding-bottom:0px;">
           <div class="row">
             <div class="col-lg-9">
               <div class="pull-left m-r-md">
@@ -372,11 +372,22 @@
               <h2>Date range preference</h2>
               <span>Choose a date range to view all flights between the selected dates. Otherwise only last 7 days' flights will be shown.</span>
             </div>
-            <div class="col-lg-3 text-right">
+            <!-- <div class="col-lg-4 text-right">
               <input class="form-control" type="text" style="width:250px; margin-top:25px;display:inline-block " name="daterange" id="daterange" placeholder="Choose date range" />
               <button class="btn btn-primary" id="queryDateRange" style="margin-top:-5px">
-                        		<i class="fa fa-search" style="font-size:1.3em;"></i>
-                        	</button>
+            		<i class="fa fa-search" style="font-size:1.3em;"></i>
+            	</button>
+            </div> -->
+            <div class="col-lg-3">
+              <div class="form-group" style="margin-top:25px;">
+                <!-- <label class="font-normal">Date Range Preference</label> -->
+                <div class="input-group date">
+                  <span class="input-group-addon" id="queryDateRange">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <input type="text" class="form-control" id="daterange" name="daterange" placeholder="Choose date range">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -385,25 +396,25 @@
 
 
         <div class="row">
-          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+          <div class="col-md-1 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Airline</h4>
           </div>
-          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+          <div class="col-md-1 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Flight No</h4>
           </div>
-          <div class="col-md-1 hidden-xs col-sm-1 text-center">
+          <div class="col-md-1 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Date</h4>
           </div>
-          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+          <div class="col-md-2 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Flight Info</h4>
           </div>
-          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+          <div class="col-md-2 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Briefing</h4>
           </div>
-          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+          <div class="col-md-2 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Arrival</h4>
           </div>
-          <div class="col-md-2 hidden-xs col-sm-1 text-center">
+          <div class="col-md-2 hidden-md hidden-sm hidden-xs col-sm-1 text-center">
             <h4>Departure</h4>
           </div>
 
@@ -459,7 +470,10 @@
               </a>
             </div>
             <div class="col-md-1 text-center">
-              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              <div style="margin-top:-10px;">
+                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              </div>
             </div>
           </div>
         </div>
@@ -511,7 +525,10 @@
               </a>
             </div>
             <div class="col-md-1 text-center">
-              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              <div style="margin-top:-10px;">
+                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              </div>
             </div>
           </div>
         </div>
@@ -564,7 +581,10 @@
               </a>
             </div>
             <div class="col-md-1 text-center">
-              <button class="btn btn-default btn-outline" style="margin-top:-10px;"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              <div style="margin-top:-10px;">
+                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
+              </div>
             </div>
           </div>
         </div>
@@ -695,12 +715,12 @@
                     <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin">
                   </div>
                 </div>
-                <div class="col-lg-2">
+                <!-- <div class="col-lg-2">
                   <div class="form-group myRequiredField">
                     <label>Total</label>
                     <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true">
                   </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-2">
                   <label>STA</label>
@@ -722,6 +742,15 @@
                 </div>
                 <div class="col-lg-2">
                   <label>STD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="00:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>ETD</label>
                   <div class="input-group clockpicker" data-autoclose="true">
                     <input type="text" class="form-control" value="00:00">
                     <span class="input-group-addon">
@@ -861,12 +890,12 @@
                     <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin" value="5">
                   </div>
                 </div>
-                <div class="col-lg-2">
+                <!-- <div class="col-lg-2">
                   <div class="form-group myRequiredField">
                     <label>Total</label>
                     <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true" value="7">
                   </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-2">
                   <label>STA</label>
@@ -890,6 +919,15 @@
                   <label>STD</label>
                   <div class="input-group clockpicker" data-autoclose="true">
                     <input type="text" class="form-control" value="18:00">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label>ETD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="18:05">
                     <span class="input-group-addon">
                                                 <span class="fa fa-clock-o"></span>
                     </span>
@@ -1034,7 +1072,7 @@
 
 
 
-    var queryButton = $('button#queryDateRange');
+    var queryButton = $('#queryDateRange');
     var dateInput = $('input#daterange');
     queryButton.on('click', function(virtzirt) {
       if (dateInput.val() == "") {
@@ -1058,18 +1096,15 @@
     })
 
 
-
-
-
-    var cocpit = $('#inputCocpit');
-    var cabin = $('#inputCabin');
-    var total = $('#inputTotalCrew');
-    cocpit.on('change', function() {
-      total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
-    });
-    cabin.on('change', function() {
-      total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
-    });
+    // var cocpit = $('#inputCocpit');
+    // var cabin = $('#inputCabin');
+    // var total = $('#inputTotalCrew');
+    // cocpit.on('change', function() {
+    //   total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
+    // });
+    // cabin.on('change', function() {
+    //   total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
+    // });
 
 
     $('.clockpicker').clockpicker({
