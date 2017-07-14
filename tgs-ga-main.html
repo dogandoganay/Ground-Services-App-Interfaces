@@ -592,7 +592,7 @@
       </div>
 
 
-      <div class="modal inmodal fade" id="createFlightModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal inmodal fade" id="createFlightModal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -607,116 +607,126 @@
 
             <div class="modal-body" style="">
 
+              <div class="row">
+                <div class="col-lg-4 pull-right">
+                  <div class="form-group" id="data_1">
+                    <label>Flight Date</label>
+                    <div class="input-group date">
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div class="row">
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">Select</option>
-                                                    <option>SCHEDULED</option>
-                                                    <option>CHARTER</option>
-                                                    <option>VIP</option>
-                                                    <option>BUSINESS</option>
-                                                    <option>UMRAH</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option value="">Select</option>
+                          <option>SCHEDULED</option>
+                          <option>CHARTER</option>
+                          <option>VIP</option>
+                          <option>BUSINESS</option>
+                          <option>UMRAH</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">Select</option>
-                                                    <option>TROYA</option>
-                                                    <option>AMADEUS</option>
-                                                    <option>GALILEO</option>
-                                                    <option>IATI</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option value="">Select</option>
+                          <option>TROYA</option>
+                          <option>AMADEUS</option>
+                          <option>GALILEO</option>
+                          <option>IATI</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">Select</option>
-                                                    <option>AIR CANADA</option>
-                                                    <option>MALASIAN AIRLINES</option>
-                                                    <option>QESHM AIR</option>
-                                                    <option>SINGAPORE AIRLINES</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option value="">Select</option>
+                          <option>AIR CANADA</option>
+                          <option>MALASIAN AIRLINES</option>
+                          <option>QESHM AIR</option>
+                          <option>SINGAPORE AIRLINES</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight No Arr</label>
                     <input type="number" min="0" placeholder="Arr" class="form-control">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight No Dep</label>
                     <input type="number" min="0" placeholder="Dep" class="form-control">
                   </div>
                 </div>
 
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">Select</option>
-                                                    <option value="">BOEING</option>
-                                                    <option value="">AIRBUS</option>
-                                                    <option value="">EMBRAER</option>
-                                                    <option value="">...</option>
-                                                </select>
+                          <option value="">Select</option>
+                          <option value="">BOEING</option>
+                          <option value="">AIRBUS</option>
+                          <option value="">EMBRAER</option>
+                          <option value="">...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">Select</option>
-                                                    <option value="">737-700</option>
-                                                    <option value="">737-800</option>
-                                                    <option value="">737-900ER</option>
-                                                    <option value="">777-300ER</option>
-                                                    <option value="">...</option>
-                                                </select>
+                          <option value="">Select</option>
+                          <option value="">737-700</option>
+                          <option value="">737-800</option>
+                          <option value="">737-900ER</option>
+                          <option value="">777-300ER</option>
+                          <option value="">...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Registration</label>
                     <input type="text" placeholder="Registration" class="form-control">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Cocpit</label>
                     <input type="number" min="0" placeholder="Cocpit" class="form-control" id="inputCocpit">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Cabin</label>
                     <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin">
                   </div>
                 </div>
                 <!-- <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Total</label>
                     <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true">
                   </div>
@@ -772,7 +782,7 @@
       </div>
 
 
-      <div class="modal inmodal fade" id="editFlightModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal inmodal fade" id="editFlightModal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -787,111 +797,121 @@
 
             <div class="modal-body" style="">
 
+              <div class="row">
+                <div class="col-lg-4 pull-right">
+                  <div class="form-group" id="data_1">
+                    <label>Flight Date</label>
+                    <div class="input-group date">
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="01.01.2017">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div class="row">
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option>SCHEDULED</option>
-                                                    <option>CHARTER</option>
-                                                    <option>VIP</option>
-                                                    <option>BUSINESS</option>
-                                                    <option>UMRAH</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option>SCHEDULED</option>
+                          <option>CHARTER</option>
+                          <option>VIP</option>
+                          <option>BUSINESS</option>
+                          <option>UMRAH</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option>AMADEUS</option>
-                                                    <option>TROYA</option>
-                                                    <option>GALILEO</option>
-                                                    <option>IATI</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option>AMADEUS</option>
+                          <option>TROYA</option>
+                          <option>GALILEO</option>
+                          <option>IATI</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option>AIR CANADA</option>
-                                                    <option>MALASIAN AIRLINES</option>
-                                                    <option>QESHM AIR</option>
-                                                    <option>SINGAPORE AIRLINES</option>
-                                                    <option>...</option>
-                                                </select>
+                          <option>AIR CANADA</option>
+                          <option>MALASIAN AIRLINES</option>
+                          <option>QESHM AIR</option>
+                          <option>SINGAPORE AIRLINES</option>
+                          <option>...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight No Arr</label>
                     <input type="number" min="0" placeholder="Arr" class="form-control" value="798">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Flight No Dep</label>
                     <input type="number" min="0" placeholder="Dep" class="form-control" value="799">
                   </div>
                 </div>
 
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                    <option value="">BOEING</option>
-                                                    <option value="">AIRBUS</option>
-                                                    <option value="">EMBRAER</option>
-                                                    <option value="">...</option>
-                                                </select>
+                          <option value="">BOEING</option>
+                          <option value="">AIRBUS</option>
+                          <option value="">EMBRAER</option>
+                          <option value="">...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
                       <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                                                <option value="">777-300ER</option>
-                                                <option value="">737-700</option>
-                                                <option value="">737-800</option>
-                                                <option value="">737-900ER</option>
-                                                <option value="">...</option>
-                                            </select>
+                          <option value="">777-300ER</option>
+                          <option value="">737-700</option>
+                          <option value="">737-800</option>
+                          <option value="">737-900ER</option>
+                          <option value="">...</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Registration</label>
                     <input type="text" placeholder="Registration" class="form-control" value="XXYYY">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Cocpit</label>
                     <input type="number" min="0" placeholder="Cocpit" class="form-control" id="inputCocpit" value="2">
                   </div>
                 </div>
                 <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Cabin</label>
                     <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin" value="5">
                   </div>
                 </div>
                 <!-- <div class="col-lg-2">
-                  <div class="form-group myRequiredField">
+                  <div class="form-group ">
                     <label>Total</label>
                     <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true" value="7">
                   </div>
@@ -995,8 +1015,8 @@
       showWeekNumbers: true,
       showISOWeekNumbers: true,
       locale: {
-        format: "DD/MM/YYYY",
-        separator: " - ",
+        format: "dd-mm-yyyy",
+        separator: "-",
         firstDay: 1
       },
       linkedCalendars: false,
@@ -1012,6 +1032,15 @@
         'This Year': [moment().startOf('year'), moment().endOf('year')],
         'Last Year': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')],
       }
+    });
+
+    $('#data_1 .input-group.date').datepicker({
+      todayBtn: "linked",
+      keyboardNavigation: false,
+      forceParse: false,
+      calendarWeeks: true,
+      autoclose: true,
+      format: "dd/mm/yyyy"
     });
 
     $('.i-checks').iCheck({

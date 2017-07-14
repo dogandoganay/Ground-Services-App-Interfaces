@@ -8574,6 +8574,13 @@ body.md-skin {
 /* custom definitions */
 /**********************/
 
+textarea{
+  border: 1px solid #e5e6e7;
+}
+textarea:focus{
+  border-color: #ce3b4b;
+}
+
 *:focus {
     outline: none;
 }
