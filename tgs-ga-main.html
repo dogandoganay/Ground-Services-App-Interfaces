@@ -608,22 +608,11 @@
             <div class="modal-body" style="">
 
               <div class="row">
-                <div class="col-lg-4 pull-right">
-                  <div class="form-group" id="data_1">
-                    <label>Flight Date</label>
-                    <div class="input-group date">
-                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">Select</option>
                           <option>SCHEDULED</option>
                           <option>CHARTER</option>
@@ -635,11 +624,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2">
+
+                <div class="col-lg-4">
                   <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">Select</option>
                           <option>TROYA</option>
                           <option>AMADEUS</option>
@@ -650,11 +640,16 @@
                     </div>
                   </div>
                 </div>
+
+              </div>
+
+              <div class="row">
+
                 <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">Select</option>
                           <option>AIR CANADA</option>
                           <option>MALASIAN AIRLINES</option>
@@ -677,12 +672,21 @@
                     <input type="number" min="0" placeholder="Dep" class="form-control">
                   </div>
                 </div>
+                <div class="col-lg-4">
+                  <div class="form-group ">
+                    <label>Registration</label>
+                    <input type="text" placeholder="Registration" class="form-control">
+                  </div>
+                </div>
 
+              </div>
+
+              <div class="row">
                 <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">Select</option>
                           <option value="">BOEING</option>
                           <option value="">AIRBUS</option>
@@ -696,7 +700,7 @@
                   <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">Select</option>
                           <option value="">737-700</option>
                           <option value="">737-800</option>
@@ -705,12 +709,6 @@
                           <option value="">...</option>
                       </select>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="form-group ">
-                    <label>Registration</label>
-                    <input type="text" placeholder="Registration" class="form-control">
                   </div>
                 </div>
                 <div class="col-lg-2">
@@ -725,50 +723,77 @@
                     <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin">
                   </div>
                 </div>
-                <!-- <div class="col-lg-2">
-                  <div class="form-group ">
-                    <label>Total</label>
-                    <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true">
-                  </div>
-                </div> -->
+              </div>
 
-                <div class="col-lg-2">
+
+              <div class="row">
+                <div class="col-lg-3">
                   <label>STA</label>
                   <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="00:00">
+                    <input type="text" class="form-control" value="">
                     <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
+                      <span class="fa fa-clock-o"></span>
                     </span>
                   </div>
+                  <div class="form-group" id="data_1">
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="">
+                      <span class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-2">
+
+                <div class="col-lg-3">
                   <label>ETA</label>
                   <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="00:00">
+                    <input type="text" class="form-control" value="">
                     <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
+                      <span class="fa fa-clock-o"></span>
                     </span>
                   </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-lg-2">
+
+                <div class="col-lg-3">
                   <label>STD</label>
                   <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="00:00">
+                    <input type="text" class="form-control" value="">
                     <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
+                      <span class="fa fa-clock-o"></span>
                     </span>
                   </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-lg-2">
+
+                <div class="col-lg-3">
                   <label>ETD</label>
                   <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="00:00">
+                    <input type="text" class="form-control" value="">
                     <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
+                      <span class="fa fa-clock-o"></span>
                     </span>
+                  </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
                   </div>
                 </div>
               </div>
+
             </div>
 
             <div class="modal-footer">
@@ -798,22 +823,11 @@
             <div class="modal-body" style="">
 
               <div class="row">
-                <div class="col-lg-4 pull-right">
-                  <div class="form-group" id="data_1">
-                    <label>Flight Date</label>
-                    <div class="input-group date">
-                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="01.01.2017">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option>SCHEDULED</option>
                           <option>CHARTER</option>
                           <option>VIP</option>
@@ -824,13 +838,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2">
+
+                <div class="col-lg-4">
                   <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                          <option>AMADEUS</option>
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option>TROYA</option>
+                          <option>AMADEUS</option>
                           <option>GALILEO</option>
                           <option>IATI</option>
                           <option>...</option>
@@ -838,11 +853,16 @@
                     </div>
                   </div>
                 </div>
+
+              </div>
+
+              <div class="row">
+
                 <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option>AIR CANADA</option>
                           <option>MALASIAN AIRLINES</option>
                           <option>QESHM AIR</option>
@@ -855,21 +875,30 @@
                 <div class="col-lg-2">
                   <div class="form-group ">
                     <label>Flight No Arr</label>
-                    <input type="number" min="0" placeholder="Arr" class="form-control" value="798">
+                    <input type="number" min="0" placeholder="Arr"  value="987" class="form-control">
                   </div>
                 </div>
                 <div class="col-lg-2">
                   <div class="form-group ">
                     <label>Flight No Dep</label>
-                    <input type="number" min="0" placeholder="Dep" class="form-control" value="799">
+                    <input type="number" min="0" placeholder="Dep" value="988" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group ">
+                    <label>Registration</label>
+                    <input type="text" placeholder="Registration" value="CNKLM" class="form-control">
                   </div>
                 </div>
 
+              </div>
+
+              <div class="row">
                 <div class="col-lg-4">
                   <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
                           <option value="">BOEING</option>
                           <option value="">AIRBUS</option>
                           <option value="">EMBRAER</option>
@@ -882,78 +911,98 @@
                   <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select" tabindex="2" style="width:inherit;">
-                          <option value="">777-300ER</option>
+                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                          <option value="">787-Dreamliner</option>
                           <option value="">737-700</option>
                           <option value="">737-800</option>
                           <option value="">737-900ER</option>
+                          <option value="">777-300ER</option>
                           <option value="">...</option>
                       </select>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="form-group ">
-                    <label>Registration</label>
-                    <input type="text" placeholder="Registration" class="form-control" value="XXYYY">
-                  </div>
-                </div>
                 <div class="col-lg-2">
                   <div class="form-group ">
                     <label>Cocpit</label>
-                    <input type="number" min="0" placeholder="Cocpit" class="form-control" id="inputCocpit" value="2">
+                    <input type="number" min="0" placeholder="Cocpit" value="3" class="form-control" id="inputCocpit">
                   </div>
                 </div>
                 <div class="col-lg-2">
                   <div class="form-group ">
                     <label>Cabin</label>
-                    <input type="number" min="0" placeholder="Cabin" class="form-control" id="inputCabin" value="5">
-                  </div>
-                </div>
-                <!-- <div class="col-lg-2">
-                  <div class="form-group ">
-                    <label>Total</label>
-                    <input type="number" placeholder="Total" class="form-control" id="inputTotalCrew" disabled="true" value="7">
-                  </div>
-                </div> -->
-
-                <div class="col-lg-2">
-                  <label>STA</label>
-                  <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="14:50">
-                    <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <label>ETA</label>
-                  <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="14:36">
-                    <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <label>STD</label>
-                  <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="18:00">
-                    <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <label>ETD</label>
-                  <div class="input-group clockpicker" data-autoclose="true">
-                    <input type="text" class="form-control" value="18:05">
-                    <span class="input-group-addon">
-                                                <span class="fa fa-clock-o"></span>
-                    </span>
+                    <input type="number" min="0" placeholder="Cabin" value="6" class="form-control" id="inputCabin">
                   </div>
                 </div>
               </div>
+
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <label>STA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="23:50">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="29.04.2017">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <label>ETA</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="00:25">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="30.04.2017">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <label>STD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="06:50">
+                    <span class="input-group-addon">
+                      <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="30.04.2017">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <label>ETD</label>
+                  <div class="input-group clockpicker" data-autoclose="true">
+                    <input type="text" class="form-control" value="06:47">
+                    <span class="input-group-addon">
+                                                <span class="fa fa-clock-o"></span>
+                    </span>
+                  </div>
+                  <div class="form-group" id="data_1">
+                      <div class="input-group date">
+                          <input type="text" class="form-control" value="30.04.2017">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div class="modal-footer">

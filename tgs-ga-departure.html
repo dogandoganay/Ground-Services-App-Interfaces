@@ -399,10 +399,16 @@
                                                   <div class="form-group ">
                                                       <label>Door Close Time</label>
                                                       <div class="input-group clockpicker" data-autoclose="true">
-                                                          <input type="text" class="form-control" value="00:00">
-                                                          <span class="input-group-addon">
-                                                              <span class="fa fa-clock-o"></span>
-                                                          </span>
+                                                        <input type="text" class="form-control" value="">
+                                                        <span class="input-group-addon">
+                                                          <span class="fa fa-clock-o"></span>
+                                                        </span>
+                                                      </div>
+                                                      <div class="form-group" id="data_1">
+                                                          <div class="input-group date">
+                                                              <input type="text" class="form-control" value="">
+                                                              <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
@@ -410,10 +416,16 @@
                                                   <div class="form-group ">
                                                       <label>Push Back Time</label>
                                                       <div class="input-group clockpicker" data-autoclose="true">
-                                                          <input type="text" class="form-control" value="00:00">
-                                                          <span class="input-group-addon">
-                                                              <span class="fa fa-clock-o"></span>
-                                                          </span>
+                                                        <input type="text" class="form-control" value="">
+                                                        <span class="input-group-addon">
+                                                          <span class="fa fa-clock-o"></span>
+                                                        </span>
+                                                      </div>
+                                                      <div class="form-group" id="data_1">
+                                                          <div class="input-group date">
+                                                              <input type="text" class="form-control" value="">
+                                                              <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
@@ -421,10 +433,16 @@
                                                   <div class="form-group ">
                                                       <label>Takeoff Time</label>
                                                       <div class="input-group clockpicker" data-autoclose="true">
-                                                          <input type="text" class="form-control" value="00:00">
-                                                          <span class="input-group-addon">
-                                                              <span class="fa fa-clock-o"></span>
-                                                          </span>
+                                                        <input type="text" class="form-control" value="">
+                                                        <span class="input-group-addon">
+                                                          <span class="fa fa-clock-o"></span>
+                                                        </span>
+                                                      </div>
+                                                      <div class="form-group" id="data_1">
+                                                          <div class="input-group date">
+                                                              <input type="text" class="form-control" value="">
+                                                              <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
@@ -530,6 +548,12 @@
                                               </div>
                                               <div class="col-lg-2">
                                                   <div class="form-group ">
+                                                      <label>D/G</label>
+                                                      <input type="number" placeholder="D/G" class="form-control">
+                                                  </div>
+                                              </div>
+                                              <div class="col-lg-2">
+                                                  <div class="form-group ">
                                                       <label>Total O/B</label>
                                                       <input type="number" placeholder="Total O/B" class="form-control">
                                                   </div>
@@ -542,93 +566,141 @@
                                     <div class="panel-body">
                                         <div class="ibox-content">
                                           <div class="row">
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Baggage Pcs</label>
                                                       <input type="number" placeholder="Baggage Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Baggage Kgs</label>
                                                       <input type="number" placeholder="Baggage Kgs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Rush Bag Pcs</label>
                                                       <input type="number" placeholder="Rush Bag Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Rush Bag Kgs</label>
                                                       <input type="number" placeholder="Rush Bag Kgs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Oversize Pcs</label>
                                                       <input type="number" placeholder="Oversize Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Oversize Kgs</label>
                                                       <input type="number" placeholder="Oversize Kgs" class="form-control">
                                                   </div>
+                                              </div>
+                                              <div class="col-lg-2 pull-right">
+                                                <div class="widget style1 navy-bg">
+                                                  <div class="row vertical-align">
+                                                      <div class="col-xs-3">
+                                                          <i class="fa fa-balance-scale fa-3x"></i>
+                                                      </div>
+                                                      <div class="col-xs-9 text-right">
+                                                          <h2 class="font-bold">2098</h2>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-lg-2 pull-right">
+                                                <div class="widget style1 navy-bg">
+                                                  <div class="row vertical-align">
+                                                      <div class="col-xs-3">
+                                                          <i class="fa fa-suitcase fa-3x"></i>
+                                                      </div>
+                                                      <div class="col-xs-9 text-right">
+                                                          <h2 class="font-bold">10</h2>
+                                                      </div>
+                                                  </div>
+                                                </div>
                                               </div>
                                           </div>
 
                                           <hr>
 
                                           <div class="row">
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Cargo Pcs</label>
                                                       <input type="number" placeholder="Cargo Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>Cargo Kgs</label>
                                                       <input type="number" placeholder="Cargo Kgs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>DGR Cargo Pcs</label>
                                                       <input type="number" placeholder="DGR Cargo Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>DGR Cargo Kgs</label>
                                                       <input type="number" placeholder="DGR Cargo Kgs" class="form-control">
                                                   </div>
                                               </div>
+                                              <div class="col-lg-2 pull-right">
+                                                <div class="widget style1 navy-bg">
+                                                  <div class="row vertical-align">
+                                                      <div class="col-xs-3">
+                                                          <i class="fa fa-balance-scale fa-3x"></i>
+                                                      </div>
+                                                      <div class="col-xs-9 text-right">
+                                                          <h2 class="font-bold">52100</h2>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-lg-2 pull-right">
+                                                <div class="widget style1 navy-bg">
+                                                  <div class="row vertical-align">
+                                                      <div class="col-xs-3">
+                                                          <i class="fa fa-cube fa-3x"></i>
+                                                      </div>
+                                                      <div class="col-xs-9 text-right">
+                                                          <h2 class="font-bold">9</h2>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                             </div>
                                             <hr>
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>PETC Pcs</label>
                                                       <input type="number" placeholder="PETC Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                 <div class="form-group ">
                                                     <label>PETC Kgs</label>
                                                     <input type="number" placeholder="PETC Kgs" class="form-control">
                                                 </div>
                                             </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>AVIH Pcs</label>
                                                       <input type="number" placeholder="AVIH Pcs" class="form-control">
                                                   </div>
                                               </div>
-                                              <div class="col-lg-2">
+                                              <div class="col-lg-1">
                                                   <div class="form-group ">
                                                       <label>AVIH Kgs</label>
                                                       <input type="number" placeholder="AVIH Kgs" class="form-control">
@@ -955,42 +1027,6 @@
                                 <div id="tab-flightClosure" class="tab-pane ibox">
                                     <div class="panel-body">
                                       <div class="ibox-content">
-                                        <div class="row">
-                                          <div class="col-lg-2">
-                                              <div class="form-group ">
-                                                  <label>Door Close Time</label>
-                                                  <div class="input-group clockpicker" data-autoclose="true">
-                                                      <input type="text" class="form-control" value="00:00">
-                                                      <span class="input-group-addon">
-                                                          <span class="fa fa-clock-o"></span>
-                                                      </span>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-lg-2">
-                                              <div class="form-group ">
-                                                  <label>Push Back Time</label>
-                                                  <div class="input-group clockpicker" data-autoclose="true">
-                                                      <input type="text" class="form-control" value="00:00">
-                                                      <span class="input-group-addon">
-                                                          <span class="fa fa-clock-o"></span>
-                                                      </span>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-lg-2">
-                                              <div class="form-group ">
-                                                  <label>Takeoff Time</label>
-                                                  <div class="input-group clockpicker" data-autoclose="true">
-                                                      <input type="text" class="form-control" value="00:00">
-                                                      <span class="input-group-addon">
-                                                          <span class="fa fa-clock-o"></span>
-                                                      </span>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                        </div>
-                                        <hr>
                                         <div class="row">
                                             <div class="col-lg-2">
                                                 <div class="form-group ">
@@ -2277,6 +2313,16 @@
         printCurrentDate();
         removeLoader();
         $(document).ready(function () {
+
+          $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true,
+            format: "dd/mm/yyyy"
+          });
+
             $('.clockpicker').clockpicker();
 
             $('.i-checks').iCheck({
