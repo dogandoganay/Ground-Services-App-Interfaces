@@ -99,6 +99,7 @@
                     <li class="active">
                         <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
+						<li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
                             <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
                             <li><a href="tgs-ga-reporting.html">Reporting</a></li>
                         </ul>
@@ -411,7 +412,7 @@
                                                     <div class="col-lg-1">
                                                         <div class="form-group myRequiredField">
                                                             <label>Actual Pax C/CL</label>
-                                                            <input type="number" placeholder="Actual Pax C/CL" class="form-control" required="">
+                                                            <input type="number" placeholder="Actual Pax C/CL" class="form-control">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-1">
@@ -1344,8 +1345,11 @@
                 transitionEffect: 1,
                 onStepChanging: function(event, currentIndex, newIndex) {
                     // Always allow going backward even if the current step contains invalid fields!
+
+
                     if (currentIndex > newIndex) {
                         return true;
+
                     }
 
                     // Forbid suppressing "Warning" step if the user is to young

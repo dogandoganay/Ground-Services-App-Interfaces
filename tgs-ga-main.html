@@ -108,6 +108,7 @@
           <li class="active">
             <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
+				<li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
               <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
               <li><a href="tgs-ga-reporting.html">Reporting</a></li>
             </ul>
@@ -286,7 +287,7 @@
                 <li class="divider"></li>
                 <li>
                   <div class="text-center link-block">
-                    <a href="#l">
+                    <a href="tgs-ga-history.html">
                                             <i class="fa fa-envelope"></i> <strong>Tumunu Oku</strong>
                                         </a>
                   </div>
@@ -471,7 +472,7 @@
             </div>
             <div class="col-md-1 text-center">
               <div style="margin-top:-10px;">
-                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline" data-toggle="modal" data-target="#viewFlightModal"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
                 <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
               </div>
             </div>
@@ -526,7 +527,7 @@
             </div>
             <div class="col-md-1 text-center">
               <div style="margin-top:-10px;">
-                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline" data-toggle="modal" data-target="#viewFlightModal"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
                 <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
               </div>
             </div>
@@ -582,7 +583,7 @@
             </div>
             <div class="col-md-1 text-center">
               <div style="margin-top:-10px;">
-                <button class="btn btn-default btn-outline"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
+                <button class="btn btn-default btn-outline" data-toggle="modal" data-target="#viewFlightModal"> <i class="fa fa-desktop" style="font-size:1.2em;"></i> </button>
                 <button class="btn btn-default btn-outline"> <i class="fa fa-print" style="font-size:1.2em;"></i> </button>
               </div>
             </div>
@@ -612,7 +613,7 @@
                   <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">Select</option>
                           <option>SCHEDULED</option>
                           <option>CHARTER</option>
@@ -629,7 +630,7 @@
                   <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">Select</option>
                           <option>TROYA</option>
                           <option>AMADEUS</option>
@@ -649,7 +650,7 @@
                   <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">Select</option>
                           <option>AIR CANADA</option>
                           <option>MALASIAN AIRLINES</option>
@@ -686,7 +687,7 @@
                   <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">Select</option>
                           <option value="">BOEING</option>
                           <option value="">AIRBUS</option>
@@ -700,7 +701,7 @@
                   <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">Select</option>
                           <option value="">737-700</option>
                           <option value="">737-800</option>
@@ -754,10 +755,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
 
@@ -770,10 +771,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
 
@@ -786,10 +787,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -827,7 +828,7 @@
                   <div class="form-group ">
                     <label>Flight Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option>SCHEDULED</option>
                           <option>CHARTER</option>
                           <option>VIP</option>
@@ -843,7 +844,7 @@
                   <div class="form-group ">
                     <label>DCS Preference</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option>TROYA</option>
                           <option>AMADEUS</option>
                           <option>GALILEO</option>
@@ -862,7 +863,7 @@
                   <div class="form-group ">
                     <label>Airline Name</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option>AIR CANADA</option>
                           <option>MALASIAN AIRLINES</option>
                           <option>QESHM AIR</option>
@@ -875,7 +876,7 @@
                 <div class="col-lg-2">
                   <div class="form-group ">
                     <label>Flight No Arr</label>
-                    <input type="number" min="0" placeholder="Arr"  value="987" class="form-control">
+                    <input type="number" min="0" placeholder="Arr" value="987" class="form-control">
                   </div>
                 </div>
                 <div class="col-lg-2">
@@ -898,7 +899,7 @@
                   <div class="form-group ">
                     <label>Aircraft Type</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">BOEING</option>
                           <option value="">AIRBUS</option>
                           <option value="">EMBRAER</option>
@@ -911,7 +912,7 @@
                   <div class="form-group ">
                     <label>Aircraft Model</label>
                     <div class="input-group" style="width:100%">
-                      <select data-placeholder="" class="chosen-select"  style="width:inherit;">
+                      <select data-placeholder="" class="chosen-select" style="width:inherit;">
                           <option value="">787-Dreamliner</option>
                           <option value="">737-700</option>
                           <option value="">737-800</option>
@@ -947,10 +948,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="29.04.2017">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="29.04.2017">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
 
@@ -963,10 +964,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="30.04.2017">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="30.04.2017">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
 
@@ -979,10 +980,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="30.04.2017">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="30.04.2017">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
 
@@ -995,10 +996,10 @@
                     </span>
                   </div>
                   <div class="form-group" id="data_1">
-                      <div class="input-group date">
-                          <input type="text" class="form-control" value="30.04.2017">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                      </div>
+                    <div class="input-group date">
+                      <input type="text" class="form-control" value="30.04.2017">
+                      <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1008,6 +1009,774 @@
             <div class="modal-footer">
               <div class="col-lg-2 ">
                 <button class="btn btn-primary btn-block save" id="updateFlight"> <i class="fa fa-save"></i> &nbsp; Update </button>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal inmodal fade" id="viewFlightModal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">×</span>
+                <span class="sr-only">Close</span>
+              </button>
+              <!-- <i class="fa fa-info-circle modal-icon"></i>
+              <h4 class="modal-title">Flight Details</h4> -->
+            </div>
+
+            <div class="modal-body">
+
+              <div class="row">
+                <div class="col-lg-12">
+
+
+                  <div class="panel panel-primary" style="margin-bottom:0;">
+                      <div class="panel-heading">
+                          Flight Details
+                      </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0">
+                    <div class="col-md-3">
+                      <strong>Airline: </strong>
+                      <br> Singapore Airlines
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Flight No: </strong>
+                      <br> SQ6594
+                    </div>
+                    <div class="col-md-3">
+                      <strong>A/C Type: </strong>
+                      <br> Boeing | 787 - Dreamliner
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Crew (Cockpit - Cabin): </strong>
+                      <br> 4 - 10
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin-top:0">
+                    <div class="col-md-3">
+                      <strong>STA: </strong>
+                      <br> 31.12.2017 - 15:34
+                    </div>
+                    <div class="col-md-3">
+                      <strong>ETA: </strong>
+                      <br> 31.12.2017 - 15:47
+                    </div>
+                    <div class="col-md-3">
+                      <strong>STD: </strong>
+                      <br> 31.12.2017 - 23:45
+                    </div>
+                    <div class="col-md-3">
+                      <strong>ETD: </strong>
+                      <br> 31.12.2017 - 23:54
+                    </div>
+                  </div>
+
+                  <div class="panel panel-primary" style="margin-bottom:0;">
+                      <div class="panel-heading">
+                          Briefing Details
+                      </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-4">
+                      <strong>Briefing Location &amp; Time: </strong>
+                      <br> Representative Office - 00:00
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Check-in Time &amp; Boarding Time: </strong>
+                      <br> 12:15 - 14:40
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Park Pos. - Last Park Pos. - Gate: </strong>
+                      <br> R02 - [N/A] - 228
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-4">
+                      <strong>Configuration: </strong>
+                      <br> 10C/140Y
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Estimated Pax: </strong>
+                      <br> 7C/123Y
+                    </div>
+                    <div class="col-md-4">
+                      <strong>INF &amp; CHD: </strong>
+                      <br> 3 - 2
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin-top:0;">
+                    <div class="col-md-2">
+                      <strong>WCH: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>AVIH: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>PETC: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>PAD: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>U/G: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>D/G: </strong>
+                      <br> 0
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-primary" style="margin-bottom:0;">
+                      <div class="panel-heading">
+                          Arrival Details
+                      </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-4">
+                      <strong>Origin &amp; Destination: </strong>
+                      <br> YYZ - IST
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Landing Time: </strong>
+                      <br> 31.12.2017 15:46
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Door Open: </strong>
+                      <br> 31.12.2017 15:58
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Male: </strong>
+                      <br> 72
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Female: </strong>
+                      <br> 78
+                    </div>
+                    <div class="col-md-2">
+                      <strong>INF: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>CHD: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-4">
+                      <strong>TOTAL: </strong>
+                      <br> 150 + 3
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Baggage Pcs: </strong>
+                      <br> 50
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Baggage Kgs: </strong>
+                      <br> 1124
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Rush Pcs: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Rush Kgs: </strong>
+                      <br> 23
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Total Pcs: </strong>
+                      <br> 52
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Total Kgs: </strong>
+                      <br> 1176
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Cargo Pcs: </strong>
+                      <br> 12
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Cargo Kgs: </strong>
+                      <br> 18200
+                    </div>
+                    <div class="col-md-2">
+                      <strong>DGR Cargo Pcs: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-2">
+                      <strong>DGR Cargo Kgs: </strong>
+                      <br> 420
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Total Cargo Pcs: </strong>
+                      <br> 14
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Total Cargo Kgs: </strong>
+                      <br> 18620
+                    </div>
+                  </div>
+
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>WCH: </strong>
+                      <br> 4
+                    </div>
+                    <div class="col-md-2">
+                      <strong>INAD: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>DEPA / DEPU: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Lost &amp; Found: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Rush: </strong>
+                      <br> 5
+                    </div>
+                    <div class="col-md-2">
+                      <strong>&nbsp; </strong>
+                      <br> &nbsp;
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-12">
+                      <strong>Checklist: </strong>
+                      <br>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="i-checks" style="margin-top:6px;">
+                            <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> PAX Transport
+                                  </label>
+                          </div>
+                        </div>
+                        <div class="input-group">
+                          <div class="i-checks" style="margin-top:6px;">
+                            <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> Crew Transport
+                                  </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0">
+                    <div class="col-md-2">
+                      <strong>Delay 1: </strong>
+                      <br> 32R
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 2: </strong>
+                      <br> 15A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 3: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 4: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Total Delay: </strong>
+                      <br> 2
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0">
+                    <div class="col-md-2">
+                      <strong>Duration 1: </strong>
+                      <br> 7
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 2: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 3: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 4: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Total Duration: </strong>
+                      <br> 10
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin-top:0;">
+                    <div class="col-md-12">
+                      <strong>PS: </strong>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="panel panel-primary" style="margin-bottom:0;">
+                      <div class="panel-heading">
+                          Departure Details
+                      </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-3">
+                      <strong>Origin &amp; Destination: </strong>
+                      <br> YYZ - IST
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Door Close: </strong>
+                      <br> 31.12.2017 21:57
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Pushback: </strong>
+                      <br> 31.12.2017 22:09
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Take Off: </strong>
+                      <br> 31.12.2017 22:25
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Male: </strong>
+                      <br> 72
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Female: </strong>
+                      <br> 78
+                    </div>
+                    <div class="col-md-2">
+                      <strong>INF: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>CHD: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-4">
+                      <strong>TOTAL: </strong>
+                      <br> 150 + 3
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Actual C/CL Pax: </strong>
+                      <br> 10
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Actual Y/CL Pax: </strong>
+                      <br> 140
+                    </div>
+                    <div class="col-md-2">
+                      <strong>INF: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong> &nbsp;</strong>
+                      <br> &nbsp;
+                    </div>
+                    <div class="col-md-4">
+                      <strong>TOTAL: </strong>
+                      <br> 150 + 3
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-3">
+                      <strong>PAD: </strong>
+                      <br> 1
+                    </div>
+                    <div class="col-md-3">
+                      <strong>U/G: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-3">
+                      <strong>D/G: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Overbook:</strong>
+                      <br> 0
+                    </div>
+                  </div>
+
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>Baggage Pcs: </strong>
+                      <br> 50
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Baggage Kgs: </strong>
+                      <br> 1124
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Rush Pcs: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Rush Kgs: </strong>
+                      <br> 23
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Oversize Pcs: </strong>
+                      <br> 52
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Oversize Kgs: </strong>
+                      <br> 1176
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-6">
+                      <strong>Total Pcs: </strong>
+                      <br> 52
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Total Kgs: </strong>
+                      <br> 1176
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-3">
+                      <strong>Cargo Pcs: </strong>
+                      <br> 12
+                    </div>
+                    <div class="col-md-3">
+                      <strong>Cargo Kgs: </strong>
+                      <br> 18200
+                    </div>
+                    <div class="col-md-3">
+                      <strong>DGR Cargo Pcs: </strong>
+                      <br> 2
+                    </div>
+                    <div class="col-md-3">
+                      <strong>DGR Cargo Kgs: </strong>
+                      <br> 420
+                    </div>
+                  </div>
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-6">
+                      <strong>Total Cargo Pcs: </strong>
+                      <br> 52
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Total Cargo Kgs: </strong>
+                      <br> 1176
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-3">
+                      <strong>PETC Pcs: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-3">
+                      <strong>PETC Kgs: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-3">
+                      <strong>AVIH Pcs: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-3">
+                      <strong>AVIH Kgs: </strong>
+                      <br> 0
+                    </div>
+                  </div>
+
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-2">
+                      <strong>WCH: </strong>
+                      <br> 4
+                    </div>
+                    <div class="col-md-2">
+                      <strong>INAD: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>DEPA / DEPU: </strong>
+                      <br> 0
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Offload: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>SPML: </strong>
+                      <br> 5
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Excess: </strong>
+                      <br> 11
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-12">
+                      <strong>Checklist: </strong>
+                      <br>
+                      <div class="form-group">
+
+                        <div class="col-lg-3" style="border:none;">
+                          <div class="input-group">
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> PAX Transport
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> CREW Transport
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" disabled>
+                                      <i></i> NOTOC for DGR
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> NOTOC for AVIH
+                                  </label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3" style="border:none;">
+                          <div class="input-group">
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> TAV Loadsheet
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" disabled>
+                                      <i></i> DHMI Loadsheet
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> Airline Representative
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> CLOSED
+                                  </label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3" style="border:none;">
+                          <div class="input-group">
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> APIS
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> TPM
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> MVT
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> PTM
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> COM
+                                  </label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3" style="border:none;">
+                          <div class="input-group">
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> LDM
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> PSM
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> ETL
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" checked disabled>
+                                      <i></i> SOM
+                                  </label>
+                              </div>
+                              <div class="i-checks" style="margin-top:6px;">
+                                  <label>
+                                      <input type="checkbox" value="" disabled>
+                                      <i></i> Baggage Final Check
+                                  </label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-6">
+                      <strong>Supervisor(s): </strong>
+                      <br> Kaan Fatih Yagiz
+                    </div>
+                    <div class="col-md-6">
+                      <strong>DCS Staff: </strong>
+                      <br> Mevlut Gacal, Vildan Cesar
+                    </div>
+                    <div class="col-md-6">
+                      <strong>C/CL Counter Staff: </strong>
+                      <br> Kaan Fatih Yagiz, Sevil Ay
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Y/CL Counter Staff: </strong>
+                      <br> Kaan Fatih Yagiz, Mevlut Gacal, Vildan Cesar
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Operation: </strong>
+                      <br> Name Surname
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Office Boy: </strong>
+                      <br> Isim Soyisim
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0">
+                    <div class="col-md-2">
+                      <strong>Delay 1: </strong>
+                      <br> 32R
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 2: </strong>
+                      <br> 15A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 3: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Delay 4: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Total Delay: </strong>
+                      <br> 2
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0">
+                    <div class="col-md-2">
+                      <strong>Duration 1: </strong>
+                      <br> 7
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 2: </strong>
+                      <br> 3
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 3: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-2">
+                      <strong>Duration 4: </strong>
+                      <br> N/A
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Total Duration: </strong>
+                      <br> 10
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin:0;">
+                    <div class="col-md-6">
+                      <strong>Completed By: </strong>
+                      <br> Sevil Ay
+                    </div>
+                    <div class="col-md-6">
+                      <strong>Controlled By: </strong>
+                      <br> &nbsp;
+                    </div>
+                  </div>
+
+                  <div class="row show-grid" style="margin-top:0;">
+                    <div class="col-md-12">
+                      <strong>PS: </strong>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <div class="col-lg-2 ">
+
               </div>
               <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
             </div>
@@ -1093,8 +1862,8 @@
     });
 
     $('.i-checks').iCheck({
-      checkboxClass: 'icheckbox_square-green',
-      radioClass: 'iradio_square-green',
+      checkboxClass: 'icheckbox_square-red',
+      radioClass: 'iradio_square-red',
     });
 
     var config = {
@@ -1174,17 +1943,6 @@
     })
 
 
-    // var cocpit = $('#inputCocpit');
-    // var cabin = $('#inputCabin');
-    // var total = $('#inputTotalCrew');
-    // cocpit.on('change', function() {
-    //   total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
-    // });
-    // cabin.on('change', function() {
-    //   total.val(parseInt(cocpit.val()) + parseInt(cabin.val()));
-    // });
-
-
     $('.clockpicker').clockpicker({
       template: 'modal'
     });
@@ -1252,6 +2010,10 @@
 
     .vote-item {
       padding-bottom: 5px;
+    }
+
+    .show-grid [class^="col-"] {
+      background-color: #fff !important;
     }
   </style>
 </body>

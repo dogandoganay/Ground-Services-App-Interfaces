@@ -4039,6 +4039,12 @@ table.table-mail tr td {
 .white-bg {
   background-color: #ffffff;
 }
+
+.grey-bg,
+.bg-grey {
+  background-color: #676263;
+  color: #ffffff;
+}
 .blue-bg,
 .bg-success {
   background-color: #1ab394;
