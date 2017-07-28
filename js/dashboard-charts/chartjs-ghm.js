@@ -40,7 +40,10 @@ $(function() {
       }]
   } ;
   var distributionOfAirlinesOptions = {
-      responsive: true
+      responsive: true,
+      legend:{
+        position:"left"
+      }
   };
   var ctx4 = document.getElementById("distributionOfAirlines").getContext("2d");
   new Chart(ctx4, {
@@ -60,7 +63,10 @@ $(function() {
       }]
   } ;
   var distributionOfManufacturersOptions = {
-      responsive: true
+      responsive: true,
+      legend:{
+        position:"left"
+      }
   };
   var ctx4 = document.getElementById("distributionOfManufacturers").getContext("2d");
   new Chart(ctx4, {
@@ -68,6 +74,29 @@ $(function() {
     data: distributionOfManufacturers,
     options:distributionOfManufacturersOptions
   });
+
+
+
+  var distributionOfFlightTypes = {
+      labels: ["Scheduled","Charter","Business", "VIP" ],
+      datasets: [{
+          data: [65,50,30,9],
+          backgroundColor: ["rgba(237,85,101,0.8)","#CFCDDA","#39383E", "#8B2D3B" ]
+      }]
+  } ;
+  var distributionOfFlightTypesOptions = {
+      responsive: true,
+      legend:{
+        position:"left"
+      }
+  };
+  var ctx4 = document.getElementById("distributionOfFlightTypes").getContext("2d");
+  new Chart(ctx4, {
+    type: 'doughnut',
+    data: distributionOfFlightTypes,
+    options:distributionOfFlightTypesOptions
+  });
+
 
 
 
@@ -81,21 +110,21 @@ $(function() {
               borderColor: "rgba(237,85,101,0.7)",
               pointBackgroundColor: "rgba(237,85,101,1)",
               pointBorderColor: "#fff",
-              data: [28, 48, 40, 19, 86, 27, 90]
+              data: [65, 59, 80, 81, 56, 55, 40, 80, 83, 90, 87, 91]
           },{
               label: "Airbus",
               fill: false,
               borderColor: "rgba(207, 205, 218, 0.7)",
               pointBackgroundColor: "rgba(207, 205, 218, 1)",
               pointBorderColor: "#fff",
-              data: [65, 59, 80, 81, 56, 55, 40]
+              data: [28, 48, 40, 19, 86, 27, 90, 65, 71, 70, 68, 79]
           },{
               label: "Embraer",
               fill: false,
               borderColor: "rgba(57, 56, 62, 0.7)",
               pointBackgroundColor: "rgba(57, 56, 62, 1)",
               pointBorderColor: "#fff",
-              data: [25, 17, 20, 18, 36, 45, 38]
+              data: [25, 17, 20, 18, 36, 45, 35, 44, 51, 62, 48, 54]
           }
       ]
   };

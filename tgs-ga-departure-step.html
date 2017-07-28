@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
 [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
@@ -32,9 +32,9 @@
 
 <body class="md-skin">
     <div id="wrapper">
-      <div class="loadingAircraft">
-        <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
-      </div>
+        <div class="loadingAircraft">
+            <img src="img/spinnerAircraft.svg" class="fa fa-spin" style="width:200px; height:200px; z-index:9999" alt="Loading" />
+        </div>
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -99,7 +99,7 @@
                     <li class="active">
                         <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-						<li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
+                            <li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
                             <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
                             <li><a href="tgs-ga-reporting.html">Reporting</a></li>
                         </ul>
@@ -1039,7 +1039,6 @@
                                                     </div>
 
                                                 </div>
-
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="form-group myRequiredField">
@@ -1048,7 +1047,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <div class="row">
                                                     <div class="col-lg-5">
                                                         <div class="form-group myRequiredField">
@@ -1066,7 +1064,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-1">
-
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="form-group myRequiredField">
@@ -1139,8 +1136,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h5 class="panel-title">
-                                               <a data-toggle="collapse" data-parent="#accordion" href="#passangerOne">Passanger #1</a>
-                                           </h5>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerOne">Passanger #1</a>
+                                            </h5>
                                         </div>
                                         <div id="passangerOne" class="panel-collapse collapse in">
                                             <div class="panel-body">
@@ -1248,8 +1245,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                               <a data-toggle="collapse" data-parent="#accordion" href="#passangerTwo">Passanger #2</a>
-                                           </h4>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerTwo">Passanger #2</a>
+                                            </h4>
                                         </div>
                                         <div id="passangerTwo" class="panel-collapse collapse">
                                             <div class="panel-body">
@@ -1260,8 +1257,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                               <a data-toggle="collapse" data-parent="#accordion" href="#passangerThree">Passanger #3</a>
-                                           </h4>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#passangerThree">Passanger #3</a>
+                                            </h4>
                                         </div>
                                         <div id="passangerThree" class="panel-collapse collapse">
                                             <div class="panel-body">
@@ -1297,9 +1294,9 @@
 
 
             <div class="footer">
-              <div class="pull-right">
-                Ground Services &copy; <span class="currentYearSpan"></span>
-              </div>
+                <div class="pull-right">
+                    Ground Services &copy; <span class="currentYearSpan"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -1334,16 +1331,16 @@
 
     <!-- Page-Level Scripts -->
     <script>
-    printCurrentDate();
-    removeLoader();
+        printCurrentDate();
+        removeLoader();
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#wizard").steps();
             $("#form").steps({
                 bodyTag: "fieldset",
                 // stepsOrientation: "vertical",
                 transitionEffect: 1,
-                onStepChanging: function(event, currentIndex, newIndex) {
+                onStepChanging: function (event, currentIndex, newIndex) {
                     // Always allow going backward even if the current step contains invalid fields!
 
 
@@ -1372,7 +1369,7 @@
                     // Start validation; Prevent going forward if false
                     return form.valid();
                 },
-                onStepChanged: function(event, currentIndex, priorIndex) {
+                onStepChanged: function (event, currentIndex, priorIndex) {
                     // Suppress (skip) "Warning" step if the user is old enough.
 
                     if (currentIndex === 2 && Number($("#age").val()) >= 18) {
@@ -1384,7 +1381,7 @@
                         $(this).steps("previous");
                     }
                 },
-                onFinishing: function(event, currentIndex) {
+                onFinishing: function (event, currentIndex) {
                     var form = $(this);
 
                     // Disable validation on fields that are disabled.
@@ -1394,7 +1391,7 @@
                     // Start validation; Prevent form submission if false
                     return form.valid();
                 },
-                onFinished: function(event, currentIndex) {
+                onFinished: function (event, currentIndex) {
                     var form = $(this);
 
                     // Submit form input
@@ -1406,12 +1403,12 @@
                         type: "success",
                         timer: 2000,
                         showConfirmButton: false
-                    },function(){
+                    }, function () {
                         window.location.replace('tgs-ga-main.html');
                     });
                 }
             }).validate({
-                errorPlacement: function(error, element) {
+                errorPlacement: function (error, element) {
                     element.before(error);
                 },
                 rules: {
@@ -1436,7 +1433,7 @@
         });
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
 
             var hiddenButtons = $('button.hideAtTheBeginning').hide();
@@ -1466,7 +1463,7 @@
 
 
 
-            wchInput.on('blur', function() {
+            wchInput.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     wchButton.slideUp();
                 } else {
@@ -1475,7 +1472,7 @@
                 }
             })
 
-            inadInput.on('blur', function() {
+            inadInput.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     inadButton.slideUp();
                 } else {
@@ -1484,7 +1481,7 @@
                 }
             })
 
-            depaDepuInput.on('blur', function() {
+            depaDepuInput.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     depaDepuButton.slideUp();
                 } else {
@@ -1493,7 +1490,7 @@
                 }
             })
 
-            ahlInput.on('blur', function() {
+            ahlInput.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     ahlButton.slideUp();
                 } else {
@@ -1502,7 +1499,7 @@
                 }
             })
 
-            drpInput.on('blur', function() {
+            drpInput.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     drpButton.slideUp();
                 } else {
@@ -1511,7 +1508,7 @@
                 }
             })
 
-            wchInputDep.on('blur', function() {
+            wchInputDep.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     wchButtonDep.slideUp();
                 } else {
@@ -1520,7 +1517,7 @@
                 }
             })
 
-            inadInputDep.on('blur', function() {
+            inadInputDep.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     inadButtonDep.slideUp();
                 } else {
@@ -1529,7 +1526,7 @@
                 }
             })
 
-            depaDepuInputDep.on('blur', function() {
+            depaDepuInputDep.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     depaDepuButtonDep.slideUp();
                 } else {
@@ -1538,7 +1535,7 @@
                 }
             })
 
-            spmlInputDep.on('blur', function() {
+            spmlInputDep.on('blur', function () {
                 if ($(this).val() == "" || $(this).val() < 1) {
                     spmlButtonDep.slideUp();
                 } else {
@@ -1549,14 +1546,14 @@
 
 
             var queryButton = $('button.save');
-            queryButton.on('click', function(virtzirt) {
+            queryButton.on('click', function (virtzirt) {
                 swal({
                     title: "Departure info saved!",
                     // text: "2 sn icinde kapanacak",
                     type: "success",
                     timer: 2000,
                     showConfirmButton: false
-                }, function() {
+                }, function () {
                     window.location.replace('tgs-ga-main.html');
                 });
                 virtzirt.preventDefault();
@@ -1586,7 +1583,7 @@
             $(selector).chosen(config[selector]);
         }
 
-        $('#wchModal').on('shown.bs.modal', function() {
+        $('#wchModal').on('shown.bs.modal', function () {
             $('.chosen-select', this).chosen('destroy').chosen();
         });
     </script>
@@ -1614,15 +1611,15 @@
             padding: 6px 8px;
         }
 
-        button.DTTT_button:hover,
-        div.DTTT_button:hover,
-        a.DTTT_button:hover {
-            border: 1px solid #d2d2d2;
-            background: #fff;
-            color: #676a6c;
-            box-shadow: none;
-            padding: 6px 8px;
-        }
+            button.DTTT_button:hover,
+            div.DTTT_button:hover,
+            a.DTTT_button:hover {
+                border: 1px solid #d2d2d2;
+                background: #fff;
+                color: #676a6c;
+                box-shadow: none;
+                padding: 6px 8px;
+            }
 
         .dataTables_filter label {
             margin-right: 5px;

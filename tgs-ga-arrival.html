@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <!--
 [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
 [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]
@@ -99,7 +100,7 @@
                     <li class="active">
                         <a href=""><i class="fa fa-plane"></i> <span class="nav-label">GHM</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-						<li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
+                            <li><a href="tgs-ga-dashboard.html">GHM Dashboard</a></li>
                             <li class="active"><a href="tgs-ga-main.html">Supervisor Report</a></li>
                             <li><a href="tgs-ga-reporting.html">Reporting</a></li>
                         </ul>
@@ -344,7 +345,7 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
-              <div class="row">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="tabs-container">
 
@@ -592,123 +593,135 @@
                                         <div class="ibox-content">
                                             <div class="row">
                                                 <div class="col-lg-2">
-                                                  <div class="row">
-                                                    <div class="form-group ">
-                                                      <label>WCH</label>
+                                                    <div class="row">
+                                                        <div class="form-group ">
+                                                            <label>WCH</label>
+                                                        </div>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-white" id="btnAppenderWch">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="btn-group">
-                                                      <button type="button" class="btn btn-white" id="btnAppenderWch">
-                                                        <i class="fa fa-plus"></i>
-                                                      </button>
-                                                    </div>
-                                                  </div>
-                                                  <div class="row" style="margin-top:15px;">
-                                                    <div class="col-lg-12 tooltip-demo" id="appendSectionWch">
+                                                    <div class="row" style="margin-top:15px;">
+                                                        <div class="col-lg-12 tooltip-demo" id="appendSectionWch">
 
-                                                      <span  data-toggle="tooltip" data-placement="top" title="Pax 1 Details" data-original-title="Click button to add details">
-                                                        <button class="btn btn-success btn-circle" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-text-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="Pax 2 Details" data-original-title="Click button to add details">
-                                                        <button class="btn btn-success btn-circle" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-text-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
-                                                      <span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
-                                                        <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
-                                                          <i class="fa fa-file-o"></i>
-                                                        </button>
-                                                      </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 1 Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-success btn-circle" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-text-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 2 Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-success btn-circle" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-text-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#wchModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                  </div>
                                                 </div>
                                                 <div class="col-lg-2">
                                                     <div class="form-group ">
                                                         <label>INAD</label>
                                                     </div>
                                                     <div class="btn-group">
-                                                      <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                        <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                    </div>
+                                                    <div class="row" style="margin-top:15px;">
+                                                        <div class="col-lg-12 tooltip-demo" id="">
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 1 Inad Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#inadModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-2">
                                                     <div class="form-group ">
                                                         <label>DEPA / DEPU</label>
                                                     </div>
                                                     <div class="btn-group">
-                                                      <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                        <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                    </div>
+                                                    <div class="row" style="margin-top:15px;">
+                                                        <div class="col-lg-12 tooltip-demo" id="">
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 1 Depa/Depu Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#depaDepuModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-2">
                                                     <div class="form-group ">
                                                         <label>LOST &amp; FOUND</label>
                                                     </div>
                                                     <div class="btn-group">
-                                                      <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                        <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                    </div>
+                                                    <div class="row" style="margin-top:15px;">
+                                                        <div class="col-lg-12 tooltip-demo" id="">
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 1 Lost &amp; Found Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#lostAndFoundModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-2">
                                                     <div class="form-group ">
                                                         <label>RUSH</label>
                                                     </div>
                                                     <div class="btn-group">
-                                                      <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                        <button type="button" class="btn btn-white"><i class="fa fa-plus"></i> </button>
+                                                    </div>
+                                                    <div class="row" style="margin-top:15px;">
+                                                        <div class="col-lg-12 tooltip-demo" id="">
+                                                            <span data-toggle="tooltip" data-placement="top" title="Pax 1 Rush Details" data-original-title="Click button to add details">
+                                                                <button class="btn btn-danger btn-circle btn-outline" type="button" data-toggle="modal" data-target="#rushModal">
+                                                                    <i class="fa fa-file-o"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <!-- <div class="row">
-                                                <div class="col-lg-2">
-                                                    <button class="btn btn-danger btn-block hideAtTheBeginning" id="wchButton" style="margin-top:23px;" data-toggle="modal" data-target="#wchModal">
-                                                        <i class="fa fa-plus-square-o" style="font-size:1.3em;"></i> &nbsp; lorem ipsum
-                                                    </button>
-                                                </div>
-                                                <div class="col-lg-2">
-                                                    <button class="btn btn-danger btn-block hideAtTheBeginning" id="inadButton" style="margin-top:23px;" data-toggle="modal" data-target="#inadModal">
-                                                        <i class="fa fa-plus-square-o" style="font-size:1.3em;"></i> &nbsp; lorem ipsum
-                                                    </button>
-                                                </div>
-                                                <div class="col-lg-2">
-                                                    <button class="btn btn-danger btn-block hideAtTheBeginning" id="depaDepuButton" style="margin-top:23px;" data-toggle="modal" data-target="#depaDepuModal">
-                                                        <i class="fa fa-plus-square-o" style="font-size:1.3em;"></i> &nbsp; lorem ipsum
-                                                    </button>
-                                                </div>
-                                                <div class="col-lg-2">
-                                                    <button class="btn btn-danger btn-block hideAtTheBeginning" id="lostAndFoundButton" style="margin-top:23px;" data-toggle="modal" data-target="#lostAndFoundModal">
-                                                        <i class="fa fa-plus-square-o" style="font-size:1.3em;"></i> &nbsp; lorem ipsum
-                                                    </button>
-                                                </div>
-                                                <div class="col-lg-2">
-                                                    <button class="btn btn-danger btn-block hideAtTheBeginning" id="rushButton" style="margin-top:23px;" data-toggle="modal" data-target="#rushModal">
-                                                        <i class="fa fa-plus-square-o" style="font-size:1.3em;"></i> &nbsp; lorem ipsum
-                                                    </button>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1779,6 +1792,8 @@
                 format: "dd/mm/yyyy"
             });
 
+            // $("#data_1 .input-group.date").datepicker('setDate', new Date());
+
             $('.clockpicker').clockpicker();
 
             $('.i-checks').iCheck({
@@ -1959,19 +1974,18 @@
     </script>
 
     <script>
-      var appendItemTemplate = '<span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details"><button class="btn btn-danger btn-circle btn-outline" type="button" style="margin-right:3px; margin-bottom:3px;" data-toggle="modal" data-target="#wchModal"><i class="fa fa-file-o"></i></button></span>';
+        var appendItemTemplate =
+          '<span  data-toggle="tooltip" data-placement="top" title="" data-original-title="Click button to add details"><button class="btn btn-danger btn-circle btn-outline" type="button" style="margin-right:3px; margin-bottom:3px;" data-toggle="modal" data-target="#wchModal"><i class="fa fa-file-o"></i></button></span>';
 
 
-      var btnAppenderWch = $('button#btnAppenderWch');
+        var btnAppenderWch = $('button#btnAppenderWch');
 
-      var appendSectionWch = $('#appendSectionWch');
-
-
-      btnAppenderWch.on('click',function(){
-        appendSectionWch.append(appendItemTemplate);
-      });
+        var appendSectionWch = $('#appendSectionWch');
 
 
+        btnAppenderWch.on('click', function () {
+            appendSectionWch.append(appendItemTemplate);
+        });
     </script>
 
     <style>
@@ -2021,8 +2035,8 @@
             width: 100% !important;
         }
 
-        .btn-circle{
-          margin-bottom: 3px;
+        .btn-circle {
+            margin-bottom: 3px;
         }
     </style>
 </body>
