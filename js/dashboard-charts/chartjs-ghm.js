@@ -124,7 +124,7 @@ $(function() {
               borderColor: "rgba(57, 56, 62, 0.7)",
               pointBackgroundColor: "rgba(57, 56, 62, 1)",
               pointBorderColor: "#fff",
-              data: [25, 17, 20, 18, 36, 45, 35, 44, 51, 62, 48, 54]
+              data: [25, 17, 20, 18, 36, 45, 38, 44, 51, 62, 48,]
           }
       ]
   };
